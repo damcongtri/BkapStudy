@@ -70,6 +70,7 @@ p{
  .see-all {
     font-size:15px;
     border-bottom: 1px solid #AB75F0;
+    color: #AB75F0;
 }
 .content {
     background-color: #252841;
@@ -186,6 +187,7 @@ p{
 } */
 .author-color {
     color: #AB75F0;
+    font-size: 14px;
 }
 
 .item-featured:hover .course-img {
@@ -233,11 +235,14 @@ p{
 }
 .text-course .name {
     font-size: 17px;
+    color: #fff !important;
 }
 .text-course p{
     font-size: 15px;
     margin-top: 10px;
+    color: #9197c1 !important;
 }
+
 .star-rating {
     /* margin-top: 10px; */
 }
@@ -273,6 +278,7 @@ p{
 }
 .card-title p {
     font-size: 15px;
+    color: #999ebe;
 }
 .margin {
     margin-left: 10px;
@@ -282,8 +288,9 @@ p{
     margin-top: 15px;
     font-size: 14px;
 }
-.text .author {
-  
+  .author {
+ font-size: 13px;
+ color: #999ebe; 
 }
 
 .price-author {
@@ -356,12 +363,17 @@ p{
     text-align: center;
 }
 .card-title {
-    font-size: 20px;
+    font-size: 17px;
 }
 .name {
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 10px;
+    color: #9197c1;
+    font-weight: 500;
 }
+.content-item .content-text {
+    color: #999ebe;
+} 
 .content-text {
     font-size: 13px;
     margin-top: 10px;
@@ -425,14 +437,19 @@ p{
 .content-student .name {
     margin-top: 5px;
     font-size: 15px;
+    color: #AB75F0;
 }
 .text-content {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 30px;
+    color: #999ebe;
 }
 .title {
     padding: 0 30px;
+}
+.title .author {
+    color: #fff;
 }
 
 
@@ -469,6 +486,7 @@ p{
     }
     .text-course p{
         font-size: 9px;
+        color: #999ebe;
     }  
     .star-price .price p{
         font-size: 15px;
