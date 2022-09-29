@@ -1,3 +1,7 @@
+.courses {
+    background-color: #323653;
+}
+
 /* banner */
 .banner {
     position: relative;
@@ -6,6 +10,7 @@
     background-position: bottom;
     height: 300px;
 }
+
 
 .banner span {
     text-transform: capitalize;
@@ -21,4 +26,12 @@
     font-weight: 500;
     letter-spacing: 2px;
     letter-spacing: 0.6px;
+}
+
+
+/* filter */
+.filter-course {
+    background-color: #ab75f0 !important;
+    color: #fff;
+    border-radius: 10px;
 }

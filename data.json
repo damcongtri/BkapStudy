@@ -1,0 +1,147 @@
+{
+  "cousers": [
+    {
+      "id": 1,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 2,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 3,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 4,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 5,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 6,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    },
+    {
+      "id": 7,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "home": true
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "some comment",
+      "user_id": 1,
+      "postId": 1,
+      "lessionId": 1
+    }
+  ],
+  "user": [
+    {
+      "name": "typicode",
+      "id": 1,
+      "password": "",
+      "email": "",
+      "course": [
+        {
+          "id_course": 1,
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "title": "",
+      "user_id": 1,
+      "content": "",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "aaaaa"
+    }
+  ],
+  "courseRoute": [
+    {
+      "courseId": 1,
+      "trackItem": [
+        {
+          "name": "aaaaa",
+          "lession": [
+            {
+              "name": "a1",
+              "desc": "",
+              "data": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
