@@ -15,4 +15,10 @@ export class CommentService {
   postCommetCourse(data: any): Observable<any> {
     return this.http.post(urlCourse, data)
   }
+  getCommentBlog(id_course: any, id_lession: any): Observable<any[]> {
+    return this.http.get<any[]>(`${urlBlog}?courseId=${id_course}&lessionId=${id_lession}`)
+  }
+  postCommetBlog(data: any): Observable<any> {
+    return this.http.post(urlBlog, data)
+  }
 }
