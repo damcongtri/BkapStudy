@@ -89,8 +89,8 @@
       "id": 1,
       "content": "some comment",
       "user_id": 1,
-      "postId": 1,
-      "lessionId": 1
+      "lessionId": 1,
+      "courseId": 1
     }
   ],
   "user": [

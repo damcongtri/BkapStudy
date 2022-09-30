@@ -11,4 +11,7 @@ export class CourseService {
   getAllCourse(): Observable<any[]> {
     return this.http.get<any[]>(url)
   }
+  getDetailCourse(id: any): Observable<any> {
+    return this.http.get<any>(`${url}/${id}`)
+  }
 }
