@@ -1,1 +1,59 @@
-<p>register works!</p>
+<div class="register-main">
+    <div class="main">
+        <div class="register-br">
+            <div class="text-regis">
+                <h2>Welcome Back To<span> Bkap Study</span></h2>
+                <p>Sign Up and Start Learning</p>
+            </div>
+            <div class="input-regis">
+                <form action="" [formGroup]="formregister" (onSubmit)="onSubmit()">
+                    <p>Name</p>
+                    <input type="text" placeholder="Name" formControlName="name">
+                    <div *ngIf="form.name.invalid && (form.name.dirty || form.name.touched)">
+                        <div *ngIf="form.name.errors?.required">
+                            <small class="text-danger">name cannot be left blank</small>
+                        </div>
+                    </div>
+                    <p>Email address</p>
+                    <input type="text" placeholder="abcd@gamil.com" formControlName="email">
+                    <div *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)">
+                        <div *ngIf="form.email.errors?.required">
+                            <small class="text-danger">Email cannot be left blank</small>
+                        </div>
+                        <div *ngIf="form.email.errors?.email">
+                            <small class="text-danger">Email format is incorrect</small>
+                        </div>
+                    </div>
+                    <p>Password</p>
+                    <input type="text" placeholder="Password" formControlName="password">
+                    <div *ngIf="form.password.invalid && (form.password.dirty || form.password.touched)">
+                        <div *ngIf="form.password.errors?.required">
+                            <small class="text-danger">password cannot be left blank</small>
+                        </div>
+                        <div *ngIf="form.password.errors?.minlength">
+                            <small class="text-danger">password at least 5 digits</small>
+                        </div>
+                    </div>
+                    <p>Confirm Password</p>
+                    <input type="text" placeholder="Confirm Password" formControlName="confirmPassword">
+                    <div
+                        *ngIf="form.confirmPassword.invalid && (form.confirmPassword.dirty || form.confirmPassword.touched)">
+                        <div *ngIf="form.confirmPassword.errors?.required">
+                            <small class="text-danger">confirmPassword cannot be left blank</small>
+                        </div>
+                        <div *ngIf="form.confirmPassword.errors?.minlength">
+                            <small class="text-danger">confirmPassword at least 5 digits</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button-regis">
+                <button type="submit" class="btn1"
+                    [disabled]="form.email.invalid || form.name.invalid || form.password.invalid || form.confirmPasswordinvalid">Instructor
+                    Sign In Now</button>
+                <p>Already have an account? <span routerLink="/login"><a>Sign In Now</a></span></p>
+            </div>
+        </div>
+        <p style="color: white; text-align: center; margin-top: 105px;">Copyright © 2020 AuburnForest</p>
+    </div>
+</div>

@@ -15,8 +15,12 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
+
 import { UserComponent } from './user/user.component';
 import { RouterModule } from '@angular/router';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -39,8 +43,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     PageRoutingModule,
-    CarouselModule,
     RouterModule 
+
   ]
 })
 export class PageModule { }
