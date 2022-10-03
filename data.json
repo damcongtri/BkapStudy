@@ -193,7 +193,7 @@
       "status_id": 1,
       "date": 2000,
       "view": 2000,
-      "status_4":"",
+      "status_4":true,
       "image":"https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     
     },
@@ -221,7 +221,35 @@
       "status_id": 1,
       "date": 2000,
       "view": 2000,
-      "status_4":"",
+      "status_4":true,
+      "image":"https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-8.jpg"
+    
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_4":true,
+      "image":"https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-8.jpg"
+    
+    },
+    {
+      "id": 17,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "categoty_id": 1,
+      "tag_id": 1,
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_4":true,
       "image":"https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-8.jpg"
     
     }

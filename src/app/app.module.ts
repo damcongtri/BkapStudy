@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
+// import { Routers} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,10 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule ,
+    BrowserAnimationsModule,
+    // Routers
+    // RouterModule,
+    
    
   ],
   providers: [],
