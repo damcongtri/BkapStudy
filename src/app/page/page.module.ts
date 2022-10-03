@@ -15,6 +15,7 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ExerciseComponent } from './learning/exercise/exercise.component';
   ],
   imports: [
     CommonModule,
-    PageRoutingModule
+    PageRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PageModule { }

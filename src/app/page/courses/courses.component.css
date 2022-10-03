@@ -34,4 +34,133 @@
     background-color: #ab75f0 !important;
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.filter-course::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2E3048;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+
+}
+
+.filter {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+
+/* modal-filter */
+.modal-filter {
+    max-width: 100%;
+    width: 1000px;
+}
+
+.modal-filter>div {
+    color: #fff;
+    background-color: #252841;
+}
+
+.border-modal {
+    border-color: #AB75F0;
+    border: 2px;
+}
+
+.range {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 15px;
+    -webkit-appearance: none;
+    background: #2E3048;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 2px #AB75F0;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #AB75F0;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -507px 0 0 500px #AB75F0;
+}
+
+
+
+.select-categories {
+    background-color: #2E3048;
+    color: #AB75F0;
+    border-color: #aa75f08a;
+    outline: none;
+}
+
+.select-categories:focus {
+    outline: none;
+    box-shadow: #AB75F0;
+    border-color: #AB75F0;
+    box-shadow: 0 0 0 0.1rem #aa75f078;
+}
+
+.filter-tags {
+    margin-top: 20px;
+    margin-bottom: 12px !important;
+}
+
+.tag-list .tag-item {
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #323653;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.tag-list .tag-item:focus {
+    color: #AB75F0;
+    background-color: #131134;
+}
+
+
+/* course */
+.course-item {
+    padding: 0 10px !important;
+    margin-bottom: 20px;
+}
+
+.card-course {
+    background-color: #252841 !important;
+}
+
+.course-group {
+    padding: 0 30px;
+}
+
+.tabs-product button {
+    border-color: blueviolet;
+    color: blueviolet;
+    background-color: #252841;
+}
+
+.tabs-product button:hover {
+    background-color: #AB75F0;
+}
+
+.active-tab-product {
+    background-color: #AB75F0 !important;
+    color: #fff !important;
 }
