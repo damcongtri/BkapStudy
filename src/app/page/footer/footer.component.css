@@ -1,0 +1,142 @@
+/* footer */
+footer {
+    background-image: url(/assets/image/pattern.png);
+    width: 100%;
+    height: auto;
+    color: #fff;
+ }
+ .content-footer {
+    
+ }
+ .text-footer .text {
+     margin-bottom: 25px;
+ }
+ .text-footer .fa-solid {
+     font-size: 20px;
+ }
+ .content-1 {
+     margin-top: 40px;
+ }
+ .content-link {
+     margin-top: 36px;
+ }
+ .introduce .text{
+     margin-top: 25px;
+ }
+ .img-introduce {
+     margin-top: 37px;
+ }
+ /* .text-footer {
+     margin-top: 12px;
+ } */
+ .introduce .social-network .fa-brands {
+     font-size: 30px;
+ }
+ 
+ 
+ 
+ 
+ 
+ input {
+     border-style: none;
+     background: transparent;
+     outline: none;
+   }
+   
+   button {
+     padding: 0;
+     background: none;
+     border: none;
+     outline: none;
+   }
+   
+   body {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+   }
+ 
+   @-webkit-keyframes gradient {
+     0% {
+       background-position: 0 0;
+     }
+     100% {
+       background-position: 100% 0;
+     }
+   }
+   
+   @keyframes gradient {
+     0% {
+       background-position: 0 0;
+     }
+     100% {
+       background-position: 100% 0;
+     }
+   }
+   .webflow-style-input {
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     max-width: 400px;
+     margin: 0 auto;
+     border-radius: 2px;
+     padding: 7px 5px ;
+     background: rgba(57, 63, 84, 0.8);
+     margin-top: 20px;
+   }
+   .webflow-style-input:after {
+     content: "";
+     position: absolute;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     z-index: 999;
+     height: 2px;
+     border-bottom-left-radius: 2px;
+     border-bottom-right-radius: 2px;
+     background-position: 0% 0%;
+     background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+     background-size: 500% auto;
+     -webkit-animation: gradient 3s linear infinite;
+             animation: gradient 3s linear infinite;
+   }
+   
+   .webflow-style-input input {
+     flex-grow: 1;
+     color: #bfd2ff;
+     font-size: 1rem;
+     line-height: 2.4rem;
+     padding-left: 10px;
+     vertical-align: middle;
+   }
+   .webflow-style-input input::-webkit-input-placeholder {
+     color: #7881a1;
+   }
+   
+   .webflow-style-input button .fa-arrow-right {
+     color: #7881a1;
+     font-size: 1.2rem;
+     padding-right: 20px;
+     line-height: 2.4rem;
+     vertical-align: middle;
+     transition: color 0.25s;
+   }
+   .webflow-style-input button .fa-arrow-right:hover {
+     color: #bfd2ff;
+   }
+ .email .text p{
+     margin-top: 20px;
+     font-size: 20px;
+ }
+ .fa-angle-right:hover {
+    color: #bfd2ff;
+ }
+ p {
+    margin: 0;
+
+ }
+ .social-network {
+    margin-top: 40px;
+ }
