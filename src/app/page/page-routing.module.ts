@@ -1,5 +1,8 @@
+import { registerLocaleData } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from '../form/login/login.component';
+import { RegisterComponent } from '../form/register/register.component';
 import { BlogComponent } from './blog/blog.component';
 import { CoursesComponent } from './courses/courses.component';
 import { DetailBlogComponent } from './detail-blog/detail-blog.component';
@@ -17,6 +20,8 @@ const routes: Routes = [
       { path: 'courses', component: CoursesComponent },
       { path: 'learning', component: LearningComponent },
       { path: 'course', component: DetailCoursesComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent }
     ]
   }
 ];
