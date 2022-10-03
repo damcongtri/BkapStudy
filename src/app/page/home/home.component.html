@@ -253,9 +253,9 @@
               </div>
               <div class="content-student">  
                    
-                      <owl-carousel-o [options]="customOptions">
-                        <ng-template carouselSlide *ngFor="let item of list_home4">
-                          <div class="card mb-3 background-student">
+                    <div class="row">
+                      <div class="col-lg-6"  *ngFor="let item of list_home4">
+                        <div class="card mb-3 background-student">
                           <div class="carousel-content">
                             <img src="{{item.image}} " class="card-img-top img-student" alt="...">
                           <div class="content-student">
@@ -268,12 +268,10 @@
                           </div>
                           </div>
                         </div>
-                        </ng-template>  
-                      </owl-carousel-o>
-                     
-                   
-                
-              
+                      </div>
+                    </div>
+                         
+                  
               </div>
             </div>
           </div>
