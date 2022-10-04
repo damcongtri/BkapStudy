@@ -10,6 +10,7 @@ import { DetailCoursesComponent } from './detail-courses/detail-courses.componen
 import { HomeComponent } from './home/home.component';
 import { LearningComponent } from './learning/learning.component';
 import { PageComponent } from './page.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
@@ -20,8 +21,11 @@ const routes: Routes = [
       { path: 'courses', component: CoursesComponent },
       { path: 'learning', component: LearningComponent },
       { path: 'course', component: DetailCoursesComponent },
+
+      { path:'user',component:UserComponent},
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent }
+
     ]
   }
 ];

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { PageRoutingModule } from './page-routing.module';
 import { PageComponent } from './page.component';
 import { HomeComponent } from './home/home.component';
@@ -15,7 +14,12 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { UserComponent } from './user/user.component';
+import { RouterModule } from '@angular/router';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -32,11 +36,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MaterialComponent,
     NoteComponent,
     QAComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    UserComponent
   ],
   imports: [
     CommonModule,
     PageRoutingModule,
+    RouterModule ,
+    CarouselModule
+
   ]
 })
 export class PageModule { }
