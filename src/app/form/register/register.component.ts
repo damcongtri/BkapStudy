@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Route, Router } from '@angular/router';
+
 import { FormserviceService } from 'src/app/service/formservice.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { FormserviceService } from 'src/app/service/formservice.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
 
   formregister: any = new FormGroup({
     name: new FormControl('', [
@@ -32,6 +33,7 @@ export class RegisterComponent implements OnInit {
   User:any=[];
   
   ngOnInit(): void {
+
   }
   get form(): any {
     return this.formregister.controls;
@@ -46,6 +48,31 @@ export class RegisterComponent implements OnInit {
     }
     else {
 
+    }
+  }
+
+  // const passField = document.getElementById('eye')?.setAttribute('class','fa-regular fa-eye');
+  // const ShowPass = document.getElementById('eye')?.setAttribute('class','fa-regular fa-eye-slash')
+  eye1() {
+    let ShowPass: any = document.getElementById('pwd') as HTMLLIElement
+    if (ShowPass.type === "password") {
+      document.getElementById('eye')?.setAttribute('class', 'fa-regular fa-eye-slash'),
+        document.getElementById('pwd')?.setAttribute('type', 'text')
+    } else {
+      document.getElementById('eye')?.setAttribute('class', 'fa-regular fa-eye ')
+      document.getElementById('pwd')?.setAttribute('type', 'password')
+    }
+
+
+  }
+  eye2(): void {
+    let ShowPass: any = document.getElementById('pwd2') as HTMLLIElement
+    if (ShowPass.type === "password") {
+      document.getElementById('eye2')?.setAttribute('class', 'fa-regular fa-eye-slash'),
+        document.getElementById('pwd2')?.setAttribute('type', 'text')
+    } else {
+      document.getElementById('eye2')?.setAttribute('class', 'fa-regular fa-eye ')
+      document.getElementById('pwd2')?.setAttribute('type', 'password')
     }
   }
 
