@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Route, Router } from '@angular/router';
 import { FormserviceService } from 'src/app/service/formservice.service';
 
 @Component({
@@ -26,7 +27,7 @@ export class RegisterComponent implements OnInit {
       Validators.minLength(5)
     ])
   })
-  constructor(private formservice: FormserviceService) { }
+  constructor(private formservice: FormserviceService, private Router: Router) { }
   id:any;
   User:any=[];
   
@@ -36,13 +37,12 @@ export class RegisterComponent implements OnInit {
     return this.formregister.controls;
   }
   onSubmit() {
-    alert('ok')
     if (!this.formregister.invalid) {
       this.formservice.postUser(this.formregister.value).subscribe((data)=>{
-        this.User = data;
+       if(data){
+        this.Router.navigate(['/login'])
+       }
       })
-      
-      
     }
     else {
 

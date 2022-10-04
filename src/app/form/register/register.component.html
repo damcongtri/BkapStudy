@@ -21,7 +21,7 @@
                             <small class="text-danger">Email cannot be left blank</small>
                         </div>
                         <div *ngIf="form.email.errors?.email">
-                            <small class="text-danger">Email format is incorrect</small>
+                            <small class="text-danger">Email format is incorrect</small>x`
                         </div>
                     </div>
                     <p>Password</p>
@@ -48,7 +48,7 @@
                 </form>
             </div>
             <div class="button-regis">
-                <button  class="btn1"
+                <button  class="btn1" (click)="onSubmit()"
                     [disabled]="form.email.invalid || form.name.invalid || form.password.invalid || form.confirmPasswordinvalid">Instructor
                     Sign In Now</button>
                 <p>Already have an account? <span routerLink="/login"><a>Sign In Now</a></span></p>
