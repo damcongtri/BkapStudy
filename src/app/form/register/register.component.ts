@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-<<<<<<< HEAD
-// import { type } from 'os';
-=======
+
 import { FormserviceService } from 'src/app/service/formservice.service';
->>>>>>> 1c2baecba9fd275bf44eaf816fbd307abf58cb67
 
 @Component({
   selector: 'app-register',

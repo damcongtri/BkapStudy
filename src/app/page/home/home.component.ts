@@ -1,18 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+
 import { Observable } from 'rxjs';
 import { HomeService } from 'src/app/service/home.service';
-<<<<<<< HEAD
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel';
-=======
-
-
-
-
->>>>>>> 1c2baecba9fd275bf44eaf816fbd307abf58cb67
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,30 +10,7 @@ import { HomeService } from 'src/app/service/home.service';
 })
 export class HomeComponent implements OnInit {
 
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 2
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 2
-      },
-      940: {
-        items: 2
-      }
-    },
-    nav: true
-  };
+  
 
   constructor(private router: ActivatedRoute , private HomeService: HomeService) { }
   list_home1:any = [];
