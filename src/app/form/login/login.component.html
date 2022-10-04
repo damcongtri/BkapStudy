@@ -16,7 +16,12 @@
                             <small class="text-danger">Email format is incorrect</small>
                         </div>
                     </div>
-                    <input type="text" placeholder="Password" formControlName="password">
+                    <div style="position: relative;">
+                        <input type="password" id="pwd" placeholder="Password" formControlName="password">
+                        <div class="eye">
+                            <i id="eye_" (click)="eye1()" class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
                     <div *ngIf="form.password.invalid && (form.password.dirty || form.password.touched)">
                         <div *ngIf="form.password.errors?.required">
                             <small class="text-danger">password cannot be left blank</small>

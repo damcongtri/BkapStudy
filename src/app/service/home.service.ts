@@ -22,8 +22,8 @@ export class HomeService {
     return this.http.get<any[]>(`${url}?status_4=true`)
   }
 
-  
 
-  
+
+
 
 }

@@ -29,5 +29,17 @@ export class LoginComponent implements OnInit {
     if (!this.formlogin.invalid) {
     }
   }
+  eye1() {
+    let ShowPass: any = document.getElementById('pwd') as HTMLLIElement
+    if (ShowPass.type === "password") {
+      document.getElementById('eye_')?.setAttribute('class', 'fa-regular fa-eye-slash'),
+        document.getElementById('pwd')?.setAttribute('type', 'text')
+    } else {
+      document.getElementById('eye_')?.setAttribute('class', 'fa-regular fa-eye ')
+      document.getElementById('pwd')?.setAttribute('type', 'password')
+    }
+
+
+  }
 
 }

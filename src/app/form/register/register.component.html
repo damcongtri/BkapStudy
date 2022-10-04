@@ -6,7 +6,7 @@
                 <p>Sign Up and Start Learning</p>
             </div>
             <div class="input-regis">
-                <form action="" [formGroup]="formregister" (onSubmit)="onSubmit()">
+                <form action="" [formGroup]="formregister" onsubmit="return checkStuff()" (onSubmit)="onSubmit()">
                     <p>Name</p>
                     <input type="text" placeholder="Name" formControlName="name">
                     <div *ngIf="form.name.invalid && (form.name.dirty || form.name.touched)">
@@ -25,7 +25,12 @@
                         </div>
                     </div>
                     <p>Password</p>
-                    <input type="text" placeholder="Password" formControlName="password">
+                    <div style="position: relative;">
+                        <input type="password" id="pwd" placeholder="Password" formControlName="password">
+                        <div class="eye_">
+                            <i id="eye" (click)="eye1()" class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
                     <div *ngIf="form.password.invalid && (form.password.dirty || form.password.touched)">
                         <div *ngIf="form.password.errors?.required">
                             <small class="text-danger">password cannot be left blank</small>
@@ -35,7 +40,13 @@
                         </div>
                     </div>
                     <p>Confirm Password</p>
-                    <input type="text" placeholder="Confirm Password" formControlName="confirmPassword">
+                    <div style="position: relative;">
+                        <input type="password" id="pwd2" placeholder="Confirm Password"
+                            formControlName="confirmPassword">
+                        <div class="eye_">
+                            <i id="eye2" (click)="eye2()" class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
                     <div
                         *ngIf="form.confirmPassword.invalid && (form.confirmPassword.dirty || form.confirmPassword.touched)">
                         <div *ngIf="form.confirmPassword.errors?.required">

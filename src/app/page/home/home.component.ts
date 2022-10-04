@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { HomeService } from 'src/app/service/home.service';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
 
 @Component({
   selector: 'app-home',
