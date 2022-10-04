@@ -206,7 +206,7 @@
     align-items: flex-end;
 }
 .user-img-name p{
-        margin-left: 25px;
+        transform:translateY(-55%) ;
         font-size: 20px; 
 }
 
@@ -222,8 +222,10 @@
     padding-bottom: 50px;
 }
 .introduce-active {
-    border: 1px solid #AB75F0;
+   background: #252841;
     padding: 30px;
+    box-shadow: 5px 10px #1d1e26;
+    border-radius: 10px;
 }
 .item-banner {
     margin-top: 70px;

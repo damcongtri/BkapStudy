@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormserviceService } from 'src/app/service/formservice.service';
 
 @Component({
   selector: 'app-register',
@@ -25,16 +26,26 @@ export class RegisterComponent implements OnInit {
       Validators.minLength(5)
     ])
   })
-  constructor() { }
-
+  constructor(private formservice: FormserviceService) { }
+  id:any;
+  User:any=[];
+  
   ngOnInit(): void {
   }
   get form(): any {
     return this.formregister.controls;
   }
-  onSubmit(): void {
-    if (this.formregister.invalid) {
-      return;
+  onSubmit() {
+    alert('ok')
+    if (!this.formregister.invalid) {
+      this.formservice.postUser(this.formregister.value).subscribe((data)=>{
+        this.User = data;
+      })
+      
+      
+    }
+    else {
+
     }
   }
 
