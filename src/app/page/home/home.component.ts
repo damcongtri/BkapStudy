@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Observable } from 'rxjs';
 import { HomeService } from 'src/app/service/home.service';
 @Component({
   selector: 'app-home',
@@ -11,12 +10,12 @@ import { HomeService } from 'src/app/service/home.service';
 export class HomeComponent implements OnInit {
 
 
+  constructor(private router: ActivatedRoute , private HomeService: HomeService) { }
+  list_home1:any = [];
+  list_home2:any = [];
+  list_home3:any= [];
+  list_home4:any= [];
 
-  constructor(private HomeService: HomeService) { }
-  list_home1: any = [];
-  list_home2: any = [];
-  list_home3: any = [];
-  list_home4: any = [];
   ngOnInit(): void {
     this.HomeService.getCourseHome_Feautered().subscribe((data) => {
       this.list_home1 = data;
