@@ -21,9 +21,4 @@ export class HomeService {
   getCourseHome_Student(): Observable<any[]> {
     return this.http.get<any[]>(`${url}?status_4=true`)
   }
-
-
-
-
-
 }
