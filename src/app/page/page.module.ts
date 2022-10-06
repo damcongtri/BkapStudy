@@ -16,6 +16,7 @@ import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SafePipe } from '../safe.pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialComponent,
     NoteComponent,
     QAComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    SafePipe
   ],
   imports: [
     CommonModule,

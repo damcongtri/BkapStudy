@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from "@angular/common/http";
+// import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,
