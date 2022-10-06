@@ -102,11 +102,8 @@
       "status_2": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
     }
-    
-   
   ],
-
-  "Author":[
+  "Author": [
     {
       "id": 8,
       "name": " Learn IOS development, Website design, Freelancing",
@@ -205,7 +202,6 @@
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     }
   ],
-
   "comments": [
     {
       "id": 1,
@@ -222,9 +218,23 @@
       "password": "",
       "email": "",
       "confirmPassword": ""
+    },
+    {
+      "name": "Duy",
+      "email": "khanh123@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 2,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+    },
+    {
+      "name": "bach",
+      "email": "bachdan123@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "id": 3,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     }
-   
-  
   ],
   "course": [
     {
@@ -267,7 +277,6 @@
       "name": "maketing"
     }
   ],
-  
   "courseRoute": [
     {
       "courseId": 1,
@@ -285,5 +294,4 @@
       ]
     }
   ]
-
 }

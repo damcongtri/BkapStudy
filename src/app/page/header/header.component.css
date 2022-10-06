@@ -244,6 +244,10 @@
     margin-right: 3px;
 }
 
+.dropdown-item {
+    color: #999ebe;
+}
+
 /* end hidden-menu */
 
 
@@ -290,4 +294,13 @@
     }
 
 
+}
+.user-hover:hover {
+    background-color: #323653;
+   
+}
+
+.dropdown-item:hover{
+    background-color: #323653;
+   
 }
