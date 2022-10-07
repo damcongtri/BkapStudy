@@ -22,12 +22,4 @@ export class HomeService {
   getCourseHome_Student(): Observable<any[]> {
     return this.http.get<any[]>(`${url2}?status_4=true`)
   }
-<<<<<<< HEAD
-
-
-
-
-
-=======
->>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
 }
