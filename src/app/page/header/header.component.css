@@ -3,7 +3,7 @@
     width: 100%;
     background: #252841;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     padding: 0px 15px;
     /* height: 70px; */
 }
@@ -29,7 +29,6 @@
     line-height: 56px;
 }
 
-/* end header */
 
 /* search */
 
@@ -90,7 +89,7 @@
 
 .menu-left {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     background: #252841;
     width: 70px;
     min-height: 100vh;
@@ -117,15 +116,8 @@
 
 }
 
-.menu-left .icon-group .menu-hover1,
-.menu-left .icon-group .menu-hover2,
-.menu-left .icon-group .menu-hover3,
-.menu-left .icon-group .menu-hover4,
-.menu-left .icon-group .menu-hover5,
-.menu-left .icon-group .menu-hover6,
-.menu-left .icon-group .menu-hover7,
-.menu-left .icon-group .menu-hover8,
-.menu-left .icon-group .menu-hover9 {
+
+.menu-left .icon-group .menu-hover {
     position: absolute;
     width: 196px;
     padding: 10px 24px;
@@ -135,15 +127,8 @@
     color: white;
 }
 
-.menu-left .icon-group .menu-hover1,
-.menu-left .icon-group .menu-hover2,
-.menu-left .icon-group .menu-hover3,
-.menu-left .icon-group .menu-hover4,
-.menu-left .icon-group .menu-hover5,
-.menu-left .icon-group .menu-hover6,
-.menu-left .icon-group .menu-hover7,
-.menu-left .icon-group .menu-hover8,
-.menu-left .icon-group .menu-hover9 {
+
+.menu-left .icon-group .menu-hover {
     position: absolute;
     width: 196px;
     padding: 10px 24px;
@@ -156,52 +141,13 @@
 
 }
 
-.menu-left .icon-group .menu-hover1 i,
-.menu-left .icon-group .menu-hover2 i,
-.menu-left .icon-group .menu-hover3 i,
-.menu-left .icon-group .menu-hover4 i,
-.menu-left .icon-group .menu-hover5 i,
-.menu-left .icon-group .menu-hover6 i,
-.menu-left .icon-group .menu-hover7 i,
-.menu-left .icon-group .menu-hover8 i,
-.menu-left .icon-group .menu-hover9 i {
+
+.menu-left .icon-group .menu-hover i {
     color: white;
     margin-right: 10px;
 }
 
-.menu-left .icon-group .icon-menu-hover1:hover .menu-hover1 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover2:hover .menu-hover2 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover3:hover .menu-hover3 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover4:hover .menu-hover4 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover5:hover .menu-hover5 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover6:hover .menu-hover6 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover7:hover .menu-hover7 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover8:hover .menu-hover8 {
-    left: -9px;
-}
-
-.menu-left .icon-group .icon-menu-hover9:hover .menu-hover9 {
+.menu-left .icon-group .icon-menu-hover:hover .menu-hover {
     left: -9px;
 }
 
@@ -209,9 +155,7 @@
 
 /* hidden-menu */
 
-/* .hidden-menu {
-    padding: 0px 21px;
-} */
+
 
 .hidden-menu .text-hidden-menu {
     color: #8896BD;

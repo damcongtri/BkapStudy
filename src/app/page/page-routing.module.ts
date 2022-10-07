@@ -17,12 +17,12 @@ const routes: Routes = [
     path: '', component: PageComponent, children: [
       { path: '', component: HomeComponent },
       { path: 'blogs', component: BlogComponent },
-      { path: 'blog', component: DetailBlogComponent },
+      { path: 'blog/:id', component: DetailBlogComponent },
       { path: 'courses', component: CoursesComponent },
       { path: 'learning', component: LearningComponent },
       { path: 'course', component: DetailCoursesComponent },
 
-      { path:'user',component:UserComponent},
+      { path: 'user', component: UserComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent }
 

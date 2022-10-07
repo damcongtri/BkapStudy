@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BlogService } from 'src/app/service/blog.service';
 
 @Component({
   selector: 'app-detail-blog',
@@ -7,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailBlogComponent implements OnInit {
 
-  constructor() { }
+  blog: any = [];
+
+  constructor(private blogService: BlogService, private activatedRouter: ActivatedRoute) { }
 
   ngOnInit(): void {
-
+    let id = this.activatedRouter.snapshot.params['id'];
+    this.blogService.findBlog(id).subscribe((data) => {
+      this.blog = data;
+    })
   }
 
   btnReply() {
