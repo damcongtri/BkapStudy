@@ -58,7 +58,7 @@
     },
     {
       "id": 5,
-      "name": " Learn IOS development, Website design, Freelancing",
+      "name": " Software Engineering MasterTrack® Certificate",
       "author": "John Smith",
       "price": "17$",
       "majob_1": "Developent",
@@ -73,7 +73,7 @@
     },
     {
       "id": 6,
-      "name": " Learn IOS development, Website design, Freelancing",
+      "name": " Business Analytics for Managers MasterTrack® Certificate",
       "author": "Minh ca",
       "price": "19$",
       "majob_1": "Developent",
@@ -88,7 +88,7 @@
     },
     {
       "id": 7,
-      "name": " Learn IOS development, Website design, Freelancing",
+      "name": " Master of Computer Science in Data Science",  
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": "13$",
@@ -106,7 +106,7 @@
   "Author": [
     {
       "id": 8,
-      "name": " Learn IOS development, Website design, Freelancing",
+      "name": " Big Data MasterTrack® Certificate",
       "author": "Chalvet Berthely",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
@@ -258,11 +258,11 @@
   "categories": [
     {
       "id": 1,
-      "name": "design"
+      "name": "Design"
     },
     {
       "id": 2,
-      "name": "devlopment"
+      "name": "Devlopment"
     },
     {
       "id": 3,
@@ -274,7 +274,7 @@
     },
     {
       "id": 5,
-      "name": "maketing"
+      "name": "Maketing"
     }
   ],
   "courseRoute": [

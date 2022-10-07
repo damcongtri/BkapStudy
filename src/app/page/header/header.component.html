@@ -15,7 +15,19 @@
 
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input placeholder="Search courses, articles, videos,..." type="text">
+                <input [(ngModel)]="keySearch" placeholder="Search courses, articles, videos,..." type="text" >
+                <div class="showFilterSearch" *ngIf="keySearch">
+                    <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;" class="scrollbar" >       
+                       <ul>
+                        <li   style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"   *ngFor=" let items of product | search: keySearch "  >
+                            <a href="" style="text-decoration: none; color:#999ebe;" >{{items.name}}</a>
+                        </li>
+                        <li  style="width: 500px;  max-width: 100%; list-style: none;"  class=" searchs p-2" *ngFor=" let items of product | search: keySearch "  >
+                            <a href="" style="text-decoration: none; color:#999ebe;" >{{items.author}}</a>
+                        </li>
+                       </ul>
+                     </div>
+                </div>
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">
