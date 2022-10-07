@@ -1,1 +1,244 @@
+<main>
+    <div class="detail-blog d-flex flex-wrap justify-content-around">
+        <div class="content col-lg-8 col-md-8">
+            <div class="blog_image " style="margin: 0 auto;">
+                <img class="card-img"
+                    src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/309117628_1259485451530461_2884497390203553794_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=730e14&_nc_ohc=QW3rwc9Wr7sAX84Wb1a&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_7PpsHYny71RDJGYjBshhNgiCqtXQgiUdfNUCzKv8waQ&oe=633720B0"
+                    alt="">
+            </div>
+            <div class="blog_title text-light">
+                <h3 class="mt-4 mb-2">The spectacle before us was indeed sublime</h3>
+                <div class="blog_authorDate d-flex justify-content-between align-items-center p-2 mb-3">
 
+                    <div class="date text-light m-0 text-end ">
+                        July 26, 2019 - 1 min read
+                    </div>
+                    <div class="blog_author d-flex">
+
+                        <div class="mx-auto d-flex align-items-center">
+                            <div class="avatar" style="width: 30px; border-radius: 50%; overflow: hidden;">
+                                <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-1/273458155_1108489356630072_1055490645894228383_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=xNCHsHmOpqsAX8zIoZ0&_nc_ht=scontent.fhan3-1.fna&oh=00_AT8ROcvPnLgDO8YIzv3RPUJNQ-_lFSGk_GmswkfPZuLPrQ&oe=6336C75C"
+                                    class="img-fluid rounded-top" alt="">
+                            </div>
+                            <div class=" ms-2 author_name">
+                                Minh ca
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog_text">
+                Welcome, it’s great to have you here.
+
+                We know that first impressions are important, so we’ve populated your new site with some initial
+                getting started posts that will help you get familiar with everything in no time. This is the first
+                one!
+
+                A few things you should know upfront:
+
+                Ghost is designed for ambitious, professional publishers who want to actively build a business
+                around their content. That’s who it works best for.
+                The entire platform can be modified and customised to suit your needs. It’s very powerful, but does
+                require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who
+                just want a simple personal blog.
+                For the best experience we recommend downloading the Ghost Desktop App for your computer, which is
+                the best way to access your Ghost site on a desktop device.
+
+                Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100%
+                self funded by revenue from our Ghost(Pro) service, and every penny we make is re-invested into
+                funding further development of free, open source technology for modern publishing.
+            </div>
+
+            <div class="comment">
+                <div class="comment_title d-flex align-items-center">
+                    <h3 class="pe-3">Comments</h3>
+                    <div class="comment_title-line"></div>
+                </div>
+                <div class="p-4">
+                    <div class="comment_form d-flex align-items-center ">
+                        <div class=" comment_form-avatar">
+                            <img class="card-img"
+                                src="https://yt3.ggpht.com/yti/AJo0G0kASXIEL7flCJzyxDSkXARqb4mH8xh954E8Xw=s88-c-k-c0x00ffffff-no-rj-mo"
+                                alt="">
+                        </div>
+                        <div class="comment_form-content w-100 p-3">
+                            <div class="form-floating comment_ipComment">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="comment">
+                                <label for="floatingPassword ">Comments Here....</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments_show">
+
+                        <div class="comment_show-item d-flex p-3">
+                            <div class=" comment_form-avatar">
+                                <img class="card-img"
+                                    src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-1/204704836_564764434548933_3977846616470183493_n.jpg?stp=cp0_dst-jpg_p48x48&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_ohc=VbXwUUEM3KEAX8Tjuuo&_nc_ht=scontent.fhan3-3.fna&oh=00_AT_vgKrC-g9k6xBlUi9-o_FsprjQNvMkMfGDf86O4GC3jA&oe=63380316"
+                                    alt="">
+                            </div>
+                            <div class="comment_show-content w-100 ps-3">
+                                <div class="comment_show-content--user d-flex align-items-center">
+                                    <div class="user_name pe-4">Minh ca</div>
+                                    <div class="user_date">2 munites ago</div>
+                                </div>
+                                <div class="comments_show-item--content">
+                                    Hi chào 2 em 2K7 🚓
+                                </div>
+                                <div class="comment_show-item--reply d-flex mt-3">
+                                    <div class="comment_show-item--ip w-100 align-items-center " style="display: none;"
+                                        id="ip-reply">
+                                        <input type="text" placeholder="comment here..." class="w-100 m-0" id="ip">
+                                    </div>
+                                    <div class="comment_show-item--btn " (click)="btnReply()">
+                                        Reply
+                                    </div>
+
+                                    <a class="comment_show-item--close m-0 d-flex align-items-center">
+                                        <div id="close" style="display: none;" (click)="btnClose()">
+                                            <i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12  col-12 top-0 p-3" id="blogs">
+            <h2 class="title_ ">Recent Blogs</h2>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <!-- <img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/instagram3.jpg?v=1233786014105632074"
+                                    height="100%" class="card-img" alt=""> -->
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title_ pr-3">Recent Blogs</h2>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog1">
+                <div class="d-flex ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                        <div class="image_blog">
+                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                        <div class="content_blog ">
+                            <div class="title_blog">
+                                <h6>Milatino is a London based jewellery brand. Each piece in our collection
+                                </h6>
+                            </div>
+                            <div class="describe">
+                                <p class="m-0">By: D.V.H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="./blogDetail.js"></script>
+</main>

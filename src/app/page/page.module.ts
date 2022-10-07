@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { PageRoutingModule } from './page-routing.module';
 import { PageComponent } from './page.component';
 import { HomeComponent } from './home/home.component';
@@ -15,8 +14,11 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { SafePipe } from '../safe.pipe';
+import { UserComponent } from './user/user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -34,12 +36,14 @@ import { SafePipe } from '../safe.pipe';
     NoteComponent,
     QAComponent,
     ExerciseComponent,
-    SafePipe
+    SafePipe,
+    UserComponent
   ],
   imports: [
     CommonModule,
     PageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PageModule { }

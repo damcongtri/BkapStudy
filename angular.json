@@ -18,6 +18,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/bkap-study",
@@ -28,8 +29,10 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+              
             ],
             "styles": [
+           
               "src/styles.css"
             ],
             "scripts": []
@@ -104,6 +107,5 @@
         }
       }
     }
-  },
-  "defaultProject": "BkapStudy"
+  }
 }

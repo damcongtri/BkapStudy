@@ -76,6 +76,7 @@
       "id": 5,
       "name": " Learn IOS development, Website design, Freelancing",
       "author": "John Smith",
+<<<<<<< HEAD
       "price": 100,
       "majob_1": "Developent",
       "majob_2": "Javascript",
@@ -85,6 +86,13 @@
       "tag_id": [
         1
       ],
+=======
+      "price": "17$",
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "categoty_id": 1,
+      "tag_id": 1,
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
       "status_id": 1,
       "date": 2012,
       "view": 2000,
@@ -95,6 +103,7 @@
       "id": 6,
       "name": " Learn IOS development, Website design, Freelancing",
       "author": "Minh ca",
+<<<<<<< HEAD
       "price": 19,
       "majob_1": "Developent",
       "majob_2": "Javascript",
@@ -104,6 +113,13 @@
       "tag_id": [
         1
       ],
+=======
+      "price": "19$",
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "categoty_id": 1,
+      "tag_id": 1,
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -115,6 +131,7 @@
       "name": " Learn IOS development, Website design, Freelancing",
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+<<<<<<< HEAD
       "price": 13,
       "majob_1": "Developent",
       "majob_2": "Javascript",
@@ -124,12 +141,28 @@
       "tag_id": [
         1
       ],
+=======
+      "price": "13$",
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "categoty_id": 1,
+      "tag_id": 1,
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
       "status_id": 1,
       "date": 2000,
       "view": 2000,
       "status_2": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+<<<<<<< HEAD
     },
+=======
+    }
+    
+   
+  ],
+
+  "Author":[
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
     {
       "id": 8,
       "name": " Learn IOS development, Website design, Freelancing",
@@ -138,6 +171,7 @@
       "price": 1000,
       "majob_1": "Developent",
       "majob_2": "Javascript",
+<<<<<<< HEAD
       "category_id": [
         1
       ],
@@ -145,6 +179,10 @@
         2,
         1
       ],
+=======
+      "categoty_id": 1,
+      "tag_id": 1,
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -236,7 +274,11 @@
       "status_id": 1,
       "date": 2000,
       "view": 2000,
+<<<<<<< HEAD
       "status_4": "",
+=======
+      "status_4": true,
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
     {
@@ -253,6 +295,7 @@
       "status_id": 1,
       "date": 2000,
       "view": 2000,
+<<<<<<< HEAD
       "status_4": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
@@ -289,8 +332,13 @@
       "view": 2000,
       "status_4": "",
       "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+=======
+      "status_4": "",
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
     }
   ],
+
   "comments": [
     {
       "id": 1,
@@ -302,20 +350,23 @@
   ],
   "user": [
     {
-      "name": "typicode",
       "id": 1,
+      "name": "",
       "password": "",
       "email": "",
-      "course": [
-        {
-          "id_course": 1,
-          "route": [
-            1,
-            2,
-            3,
-            4
-          ]
-        }
+      "confirmPassword": ""
+    }
+   
+  
+  ],
+  "course": [
+    {
+      "id_course": 1,
+      "route": [
+        1,
+        2,
+        3,
+        4
       ]
     }
   ],
@@ -363,13 +414,18 @@
       "name": "maketing"
     }
   ],
+  
   "courseRoute": [
     {
       "courseId": 1,
       "trackItem": [
         {
+<<<<<<< HEAD
           "id": 1,
           "name": "intro",
+=======
+          "name": "",
+>>>>>>> c4ed848db735d581035374aec130dc5a24fdc658
           "lession": [
             {
               "id": 1,
@@ -430,4 +486,5 @@
       ]
     }
   ]
+
 }

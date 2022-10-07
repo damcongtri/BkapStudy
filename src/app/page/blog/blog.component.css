@@ -1,0 +1,130 @@
+main {
+    background: #2e3048;
+    color: white;
+    overflow: hidden;
+    padding-left: 55px;
+}
+
+.banner {
+    color: #fff;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/0069/6999/files/slideshow-v1-2.jpg?v=1593074379');
+    padding: 100px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.add_blog i {
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    background: #AB75F0;
+    border-radius: 5px;
+}
+
+.banner h1 {
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+}
+
+.author img {
+    border-radius: 50%;
+}
+
+.blog {
+    background-color: #232841;
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+.blog1,
+.title_ {
+    margin: 20px 0px;
+}
+
+.title_ {
+    position: relative;
+}
+
+.title_::after {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #AB75F0;
+    content: '';
+    top: 50%;
+    left: 160px;
+}
+
+.number_one:first-child {
+    background-color: #AB75F0;
+    color: #fff;
+}
+
+.number_one {
+    border: 4px solid #AB75F0;
+    padding: 4px 10px;
+    color: #AB75F0;
+    margin: 0px 5px;
+}
+
+@media screen and (max-width:1024px) {
+    main {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .banner {
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title_blog h2 {
+        padding-top: 20px;
+    }
+}
+
+.title_ {
+    font-size: 25px;
+}
+
+.title_blog h2 {
+    font-size: 24px;
+}
+
+.title_blog {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title_blog h6 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data_blog h6 {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.describe {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.page-link:hover {
+    background-color: #AB75F0;
+    color: #fff;
+}
+
+.page-link {
+    background-color: #232841;
+    color: #AB75F0;
+    border: none;
+    border: 1px solid gray;
+}

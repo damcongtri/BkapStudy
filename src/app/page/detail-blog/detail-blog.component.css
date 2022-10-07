@@ -1,0 +1,253 @@
+.blog_text {
+    padding-bottom: 20px;
+    color: #ccc;
+    border-bottom: 3px solid #ab75f0;
+}
+
+main {
+    background-color: #2e3048;
+    padding-top: 90px;
+}
+
+main {
+    background: #2E3048;
+    color: white;
+    overflow: hidden;
+}
+
+.banner {
+    color: #fff;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/0069/6999/files/slideshow-v1-2.jpg?v=1593074379');
+    padding: 100px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.add_blog i {
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    background: #AB75F0;
+    border-radius: 5px;
+}
+
+.banner h1 {
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+}
+
+.author img {
+    border-radius: 50%;
+}
+
+.blog {
+    background-color: #232841;
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+.blog1,
+.title_ {
+    margin: 20px 0px;
+}
+
+.title_ {
+    position: relative;
+}
+
+.title_::after {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #AB75F0;
+    content: '';
+    top: 50%;
+    left: 160px;
+}
+
+.number_one:first-child {
+    background-color: #AB75F0;
+    color: #fff;
+}
+
+.number_one {
+    border: 4px solid #AB75F0;
+    padding: 4px 10px;
+    color: #AB75F0;
+    margin: 0px 5px;
+}
+
+@media screen and (max-width:426px) {
+    .banner {
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title_blog h2 {
+        padding-top: 20px;
+    }
+}
+
+.title_ {
+    font-size: 25px;
+}
+
+.title_blog h2 {
+    font-size: 24px;
+}
+
+.title_blog {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title_blog h6 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data_blog h6 {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.describe {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.image_blog {
+    padding-right: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .detail-blog {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .detail-blog {
+        padding: 20px;
+    }
+}
+
+
+/* comment */
+
+.comment {
+    border-radius: 16px;
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #252841;
+}
+
+.comment_title-line {
+    width: 100%;
+    height: 3px;
+    background-color: #AB75F0;
+    content: "";
+}
+
+.comment_form-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment_form-avatar img {
+    object-position: center;
+}
+
+.comment_ipComment input {
+    background-color: #4D5273;
+    border: none;
+    color: #ccc !important;
+}
+
+.comment_ipComment input:focus {
+    background-color: #4D5273;
+    box-shadow: none;
+
+}
+
+.comments_show-item--content {
+    width: 100%;
+}
+
+.user_date {
+    font-size: 10px;
+    color: #ccc;
+}
+
+.uset_name {
+    font-size: 12px;
+}
+
+.comment_show-item {
+    border-bottom: 1px solid #4D5273;
+}
+
+.comments_show-item--content {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #d5d5d5;
+}
+
+.comment_show-item--btn {
+
+    background-color: #ab75f0;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.comment_show-item--reply:hover {
+    color: #fff;
+}
+
+.comment_show-item--ip {
+    padding-right: 5px;
+}
+
+.comment_show-item--ip input {
+    outline: none;
+    border: none;
+    background-color: #4D5273;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 8px;
+    color: #ccc !important;
+    font-size: 12px !important;
+}
+
+.comment_show-item--close {
+    text-decoration: none;
+    display: none;
+}
+
+.comment_show-item--close i {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    background-color: #252841;
+    color: #AB75F0;
+    border: 2px solid #AB75F0;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+
+.comment_show-item--close i:hover {
+    background-color: #AB75F0;
+    color: #fff;
+}
