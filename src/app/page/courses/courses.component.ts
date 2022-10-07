@@ -104,9 +104,11 @@ export class CoursesComponent implements OnInit {
   // filter
   filterPrice(courses: any) {
     if (this.minValue != 0 || this.maxValue != 0) {
-      (this.minValue <= this.maxValue) && (courses = courses.filter((course: any) => {
+
+      (Number(this.minValue) <= this.maxValue) && (courses = courses.filter((course: any) => {
+
         // return this.maxValue < 1000 ? (course.price >= this.minValue) : (course.price >= this.minValue && course.price <= this.maxValue)
-        return course.price >= this.minValue && course.price <= this.maxValue
+        return (course.price >= this.minValue && course.price <= this.maxValue)
       }))
       console.log(courses);
     }
