@@ -251,34 +251,69 @@
             <!-- What our students say -->
             <div class="student-say">
               <div class="text d-flex justify-content-between align-items-center">
-                <p>What our students say</p>
+                <p>Popular Instructors</p>
                 <a href="">
                   <p class="see-all">See all</p>
                 </a>
               </div>
-              <div class="content-student">                     
-                    <div class="row">
-                      <div class="col-lg-6"  *ngFor="let item of list_home4">
-                        <div class="card mb-3 background-student">
-                          <div class="carousel-content">
-                            <img src="{{item.image}} " class="card-img-top img-student" alt="...">
-
-                          <div class="content-student">
-                            <div class="title">
-                              <p class="author">{{item.author}}</p>
-                              <p class="name">Student</p>
-                              <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                          </div>
-                          </div>
+              <div class="content-popular">
+                <div class="row">
+                  <div class="col-lg-3 pt-md-3" *ngFor="let item of list_home3">
+                    <div class="card-group">
+                      <div class="card  instructors">
+                        <a href=""><img src="{{item.image}}" class="card-img-top crile" alt="..."></a>
+                        <div class="content-item">
+                          <h5 class="card-title">{{item.author}}</h5>
+                          <p class="name">Web Design, Dreamnet</p>
+                          <p class="content-text">{{item.description}}</p>
+                          <p class="number-course">3 Courses, 20+ Students</p>
+                          <ul class="social-network">
+                            <li>
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li class="me-2 ms-2">
+                              <i class="fa-brands fa-google "></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-twitter"></i>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                         
-                  
-              </div>
-            </div>
-          </div>
-        </div>
+                  </div>
+                  <!-- What our students say -->
+                  <div class="student-say">
+                    <div class="text d-flex justify-content-between align-items-center">
+                      <p>What our students say</p>
+                      <a href="">
+                        <p class="see-all">See all</p>
+                      </a>
+                    </div>
+                    <div class="content-student">
+                      <div class="row">
+                        <div class="col-lg-6" *ngFor="let item of list_home4">
+                          <div class="card mb-3 background-student">
+                            <div class="carousel-content">
+                              <img src="{{item.image}} " class="card-img-top img-student" alt="...">
 
+                              <div class="content-student">
+                                <div class="title">
+                                  <p class="author">{{item.author}}</p>
+                                  <p class="name">Student</p>
+                                  <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>

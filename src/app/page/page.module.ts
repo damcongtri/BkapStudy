@@ -14,10 +14,12 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
+import { SafePipe } from '../safe.pipe';
 import { UserComponent } from './user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchFilterPipe } from '../search-filter.pipe';
+
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { SearchFilterPipe } from '../search-filter.pipe';
     QAComponent,
     ExerciseComponent,
     UserComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    SafePipe,
+    UserComponent
   ],
   imports: [
     CommonModule,
@@ -45,6 +49,8 @@ import { SearchFilterPipe } from '../search-filter.pipe';
     FormsModule,
     Ng2SearchPipeModule,
    
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PageModule { }

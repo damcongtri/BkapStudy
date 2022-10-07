@@ -18,7 +18,7 @@ const routes: Routes = [
       { path: 'blog', component: DetailBlogComponent },
       {path:'detailcourse',component:DetailCoursesComponent},
       { path: 'courses', component: CoursesComponent },
-      { path: 'learning', component: LearningComponent },
+      { path: 'learning/:id/:track/:lession', component: LearningComponent },
       { path: 'course', component: DetailCoursesComponent },
       { path:'user',component:UserComponent}
     ]

@@ -6,8 +6,12 @@
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -20,8 +24,12 @@
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -34,8 +42,12 @@
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -48,8 +60,12 @@
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -60,13 +76,17 @@
       "id": 5,
       "name": " Software Engineering MasterTrack® Certificate",
       "author": "John Smith",
-      "price": "17$",
+      "price": 100,
       "majob_1": "Developent",
       "majob_2": "Javascript",
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
-      "date": 2000,
+      "date": 2012,
       "view": 2000,
       "status_2": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-1.jpg"
@@ -75,11 +95,15 @@
       "id": 6,
       "name": " Business Analytics for Managers MasterTrack® Certificate",
       "author": "Minh ca",
-      "price": "19$",
+      "price": 19,
       "majob_1": "Developent",
       "majob_2": "Javascript",
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -91,16 +115,21 @@
       "name": " Master of Computer Science in Data Science",  
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
-      "price": "13$",
+      "price": 13,
       "majob_1": "Developent",
       "majob_2": "Javascript",
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
       "status_2": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+
     }
   ],
   "Author": [
@@ -112,8 +141,13 @@
       "price": 1000,
       "majob_1": "Developent",
       "majob_2": "Javascript",
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        2,
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -126,8 +160,12 @@
       "author": "Dann Pety",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -140,8 +178,12 @@
       "author": "Kerstein Setia",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -154,8 +196,12 @@
       "author": "Gleb Kutnesuv",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -167,8 +213,12 @@
       "name": " learn json-server",
       "author": "Chalvet Berthely",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
@@ -180,12 +230,16 @@
       "name": " learn json-server",
       "author": "Minh ca",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
-      "status_4": true,
+      "status_4": "",
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
     {
@@ -193,13 +247,51 @@
       "name": " learn json-server",
       "author": "Minh ca",
       "price": 1000,
-      "categoty_id": 1,
-      "tag_id": 1,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_4": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+    },
+    {
+      "id": 15,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
       "status_id": 1,
       "date": 2000,
       "view": 2000,
       "status_4": "",
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-8.jpg"
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
     }
   ],
   "comments": [
@@ -207,8 +299,8 @@
       "id": 1,
       "content": "some comment",
       "user_id": 1,
-      "postId": 1,
-      "lessionId": 1
+      "lessionId": 1,
+      "courseId": 1
     }
   ],
   "user": [
@@ -255,6 +347,20 @@
       "id": 1
     }
   ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Discount"
+    },
+    {
+      "id": 2,
+      "name": "New"
+    },
+    {
+      "id": 3,
+      "name": "Featured"
+    }
+  ],
   "categories": [
     {
       "id": 1,
@@ -282,11 +388,61 @@
       "courseId": 1,
       "trackItem": [
         {
-          "name": "",
+          "id": 1,
+          "name": "intro",
           "lession": [
             {
-              "name": "a1",
+              "id": 1,
+              "name": "Cấu trúc file html",
+              "desc": "HTML cơ bản cấu trúc file html",
+              "video": "https://www.youtube.com/embed/yxsWLr8AdUU",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "Các thẻ html thông dụng",
               "desc": "",
+              "video": "https://www.youtube.com/embed/aF6MkmabsKU",
+              "data": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "content",
+          "lession": [
+            {
+              "id": 1,
+              "name": "Intro",
+              "desc": "",
+              "video": "",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "set up environment",
+              "desc": "",
+              "video": "",
+              "data": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "end",
+          "lession": [
+            {
+              "id": 1,
+              "name": "Intro",
+              "desc": "",
+              "video": "",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "set up environment",
+              "desc": "",
+              "video": "",
               "data": ""
             }
           ]
