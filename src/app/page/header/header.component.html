@@ -15,14 +15,43 @@
 
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input placeholder="Search courses, articles, videos,..." type="text">
+                <input [(ngModel)]="keySearch" placeholder="Search courses, articles, videos,..." type="text" >
+                <div class="showFilterSearch" *ngIf="keySearch">
+                    <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;" class="scrollbar" >       
+                       <ul>
+                        <li   style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"   *ngFor=" let items of product | search: keySearch "  >
+                            <a href="" style="text-decoration: none; color:#999ebe;" >{{items.name}}</a>
+                        </li>
+                        <li  style="width: 500px;  max-width: 100%; list-style: none;"  class=" searchs p-2" *ngFor=" let items of product | search: keySearch "  >
+                            <a href="" style="text-decoration: none; color:#999ebe;" >{{items.author}}</a>
+                        </li>
+                       </ul>
+                     </div>
+                </div>
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="bt-login" routerLink="/login">
-                    <button>Login</button>
+                <div class="bt-login" routerLink="/user/login" *ngIf="!user" >
+                    <button>Đăng nhập</button>
+                </div>
+                <div class="bt-login" *ngIf="user"  >
+                   <button style="background-color: #252841;"  data-bs-toggle="dropdown" aria-expanded="false">                    
+                    <img src="{{user.image}}" style="width: 50px; height: 50px;border-radius: 50%;" alt="">
+                   </button>
+                  
+                   <ul class="dropdown-menu" style="background-color: #252841;">
+                    <div class="user-hover d-flex  align-items-center"  style="border-bottom: 1px solid #fff; ">
+                        <li class="ms-3 me-4 mb-2"><a class="" href="#"><img  style="width: 50px; height: 50px;border-radius: 50%;" src="{{user.image}}" alt=""></a></li>
+                        <li ><a class="" style="text-decoration: none; color: #999ebe;" href="">{{user.name}}</a></li>
+                    </div>
+                    <li ><a class="dropdown-item p-3" href="#">{{user.email}}</a></li>
+                    <li><a class="dropdown-item p-3" href="#">Feedback</a></li>
+                    <li><a class="dropdown-item p-3" href="#">Contact Us</a></li>
+                    <li ><a routerLink="/user" class="dropdown-item p-3" href="#">My person Page</a></li>
+                    <li><a routerLink="/user/login" class="dropdown-item p-3" href="#" (click)="Logout()">Đăng xuất</a></li>
+                  </ul>
                 </div>
             </div>
         </div>
@@ -111,3 +140,4 @@
         </div>
     </div>
 </div>
+

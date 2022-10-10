@@ -188,6 +188,25 @@
     margin-right: 3px;
 }
 
+.dropdown-item {
+    color: #999ebe;
+}
+
+.searchs:hover {
+    background-color: #323653;
+}
+
+
+.scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+       overflow-y: scroll;
+}
 /* end hidden-menu */
 
 
@@ -234,4 +253,16 @@
     }
 
 
+}
+.user-hover:hover {
+    background-color: #323653;
+   
+}
+
+.dropdown-item:hover{
+    background-color: #323653;
+   
+}
+.showFilterSearch {
+    
 }
