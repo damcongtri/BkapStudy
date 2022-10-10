@@ -1,20 +1,139 @@
 <div class="courses">
-    <div class="banner">
-        <span>
-            Course List
-        </span>
-    </div>
-    <div class="filter d-flex justify-content-end">
-        <div class="filter-course align-items-center me-3 mt-5 p-3 bg-danger " style="width: 100px;">
-            <span class="pe-2">Filter</span>
-            <i class="fa-solid fa-filter"></i>
-        </div>
-    </div>
 
-    <div class="course-group">
-        <div class="course-item">
-            
+    <div class="courses" style="padding-left: 70px;">
+        <div class="banner">
+            <span class="font-monospace">
+                Course List
+            </span>
         </div>
+        <div class="filter d-flex justify-content-between align-items-center p-3 text-light">
+            <h3 class="m-0">Course List</h3>
+            <div class="filter-course align-items-center p-2 bg-danger text-center" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" style="width: 100px;">
+                <span class="pe-2">Filter</span>
+                <i class="fa-solid fa-filter"></i>
+            </div>
+        </div>
+
+        <div class="course-group d-flex flex-wrap align-self-stretch">
+            <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6 col-12" routerLink="course/{{item.id}}"
+                *ngFor="let item of coursesList">
+                <div class="card card-course text-light" style="width: 100% !important; height: 100%;">
+                    <img src="{{item.image}}" style="height: -webkit-fill-available;" class="card-img-top" alt="react">
+                    <div class="card-body">
+                        <p class="card-text fs-6">{{item.name}}</p>
+                        <div class="course-bottom d-flex justify-content-between align-items-center">
+                            <div class="item-bottom ">
+                                <i class="fa-solid fa-users"></i>
+                                <span>{{item.view}}</span>
+                            </div>
+                            <div class="item-bottom">
+                                <span>{{item.price}} <i class="fa-solid fa-dollar-sign"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-filter">
+                <div class="modal-content ">
+                    <div class="modal-header border-modal">
+                        <h5 class="modal-title" id="exampleModalLabel">Filter By Course</h5>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group ps-5 pe-5">
+                                <div class="filter-price d-flex mb-4 mt-2">
+                                    <div class="min-price col-lg-6 pe-3">
+                                        <span>Min Price: </span>
+                                        <span id="rangeValueMin">{{minValue}}</span>
+                                        <input class="range" type="range" value="0" min="0" max="1000"
+                                            (change)="rangeSlideMin($event)" (mousemove)="rangeSlideMin($event)" />
+                                    </div>
+
+                                    <div class="max-price col-lg-6 ps-3">
+                                        <span>Max Price: </span>
+                                        <span id="rangeValueMax">{{maxValue}} <span style="font-size: 13px;"
+                                                *ngIf="maxValue == 1000"><i class="fa-solid fa-plus"></i></span></span>
+                                        <input class="range " type="range" value="0" min="0" max="1000"
+                                            (change)="rangeSlideMax($event)" (mousemove)="rangeSlideMax($event)" />
+                                    </div>
+                                </div>
+                                <div class="filter-categories">
+                                    <h6>Filter By Categories</h6>
+                                    <select class="form-select select-categories mt-3"
+                                        aria-label="Default select example" (change)="handleCategory($event)">
+                                        <option selected>Open this select categories</option>
+                                        <option *ngFor="let item of listCategories" value="{{item.id}}">
+                                            {{item.name}}
+                                        </option>
+                                    </select>
+                                    <div class="willFilter mt-3 mb-1">
+                                        <span class="item_willFilter " *ngFor="let item of categories">
+                                            <small>{{item.name}}</small>
+                                            <i (click)="removeCate(item.id)" class="fa-solid fa-xmark ps-2"
+                                                style="height:fit-content ; font-size: 12px;"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="filter-tags mb-4 mt-3">
+                                    <h6>Fliter By Tags</h6>
+                                    <div class="tag-list d-flex">
+                                        <span class="tag-item" *ngFor="let item of listTag" (click)="handleTag(item.id)"
+                                            [class.status]="tagCourse.includes(item.id)">{{item.name}}</span>
+                                    </div>
+                                </div>
+                                <div class="filter-status mb-4 mt-3">
+                                    <h6>Filter By Status</h6>
+                                    <div class="tag-list d-flex">
+                                        <span class="tag-item" (click)="handleStatus(1)"
+                                            [class.status]="status == 1">Finished</span>
+                                        <span class="tag-item" (click)="handleStatus(2)"
+                                            [class.status]="status == 2">Unfinished</span>
+                                        <span class="tag-item" (click)="handleStatus(0)"
+                                            [class.status]="status == 0">Update</span>
+                                    </div>
+                                </div>
+                                <div class="filter-date">
+
+                                    <span>Min Date: </span>
+                                    <span id="rangeValueDate">{{dateValue}}</span>
+                                    <input class="range" type="range" value="{{dateValue}}" min="2000" max="2022"
+                                        (change)="rangeSlideDate($event)" (mousemove)="rangeSlideDate($event)" />
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer border-modal">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn " style="background-color:#ab75f0; " data-bs-dismiss="modal"
+                            (click)="filter()">Filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs-product text-center mt-5 pb-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination btn-group justify-content-center">
+                    <li class="page-item"><button (click)="numPagee(numPage - 1)" [disabled]="numPage == 1"
+                            [class.disabled]="numPage == 1" class="page-link">Previous</button>
+                    </li>
+                    <li class="page-item"><button (click)="numPagee(1)" [class.active-tab-product]="numPage == 1"
+                            class="page-link">1</button></li>
+                    <li class="page-item"><button (click)="numPagee(2)" [class.active-tab-product]="numPage == 2"
+                            class="page-link">2</button></li>
+                    <li class="page-item"><button (click)="numPagee(3)" [class.active-tab-product]="numPage == 3"
+                            class="page-link">3</button></li>
+                    <li class="page-item"><button (click)="numPagee(numPage +1)" class="page-link">Next</button></li>
+                </ul>
+            </nav>
+        </div>
+
     </div>
 
 

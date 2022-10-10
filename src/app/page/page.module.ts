@@ -14,8 +14,10 @@ import { MaterialComponent } from './learning/material/material.component';
 import { NoteComponent } from './learning/note/note.component';
 import { QAComponent } from './learning/q-a/q-a.component';
 import { ExerciseComponent } from './learning/exercise/exercise.component';
+import { SafePipe } from '../safe.pipe';
 import { UserComponent } from './user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -34,11 +36,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NoteComponent,
     QAComponent,
     ExerciseComponent,
+    SafePipe,
     UserComponent
   ],
   imports: [
     CommonModule,
     PageRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PageModule { }

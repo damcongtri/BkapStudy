@@ -1,0 +1,128 @@
+/* learning */
+.learning {
+    background-color: #323653;
+}
+
+.btn-learning {
+    background-color: #252841;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.btn-learning:hover {
+    background-color: #2E3048;
+    color: #ccc;
+}
+
+.btn-learning:focus {
+    color: #fff;
+    background-color: #AB75F0;
+}
+
+.bg-route {
+    background-color: #252841 !important;
+    border: none;
+    color: #ccc !important;
+    box-shadow: none;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
+
+.bg-route::after {
+    display: none;
+}
+
+.bg-route:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.bg-route-item {
+    background-color: #323653 !important;
+
+    color: #ccc;
+}
+
+.btn-control-item {
+    padding: 5px 10px;
+    background-color: #AB75F0;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #AB75F0;
+}
+
+.btn-prev {
+    background-color: #323653;
+    color: #AB75F0;
+}
+
+.btn-control-item:hover {
+    color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+    .learning {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+
+/* note */
+.noteModal {
+    max-width: 100%;
+    width: 1000px;
+}
+
+.noteModal>div {
+    color: #fff;
+    background-color: #252841;
+}
+
+.border-modal {
+    border-color: #AB75F0;
+    border: 2px;
+}
+
+.form-new {
+    background-color: #2E3048;
+    border-color: #252841;
+    margin-bottom: 10px;
+}
+
+.form-new:focus {
+    background-color: #252841;
+    box-shadow: none;
+    border-color: #AB75F0;
+    color: #ccc;
+}
+
+.list-note ol li {
+    background-color: #2E3048 !important;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.list-note ol {}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #252841;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #AB75F0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
