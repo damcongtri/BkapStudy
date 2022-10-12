@@ -6,6 +6,7 @@ const urlTag = 'http://localhost:3000/tags'
 const urlCate = 'http://localhost:3000/categories'
 const urlRoute = 'http://localhost:3000/courseRoute'
 const urlNote = 'http://localhost:3000/noteCourse'
+const urlCart = 'http://localhost:3000/cart'
 @Injectable({
   providedIn: 'root'
 })
@@ -50,4 +51,12 @@ export class CourseService {
     return this.http.delete<any>(`${urlNote}/${id}`)
   }
 
+
+
+  getCourseUser(id: any): Observable<any> {
+    return this.http.get<any>(`${urlCart}?userId=${id}`)
+  }
+  postCourseUser(data: any): Observable<any> {
+    return this.http.post<any>(`${urlCart}`, data)
+  }
 }

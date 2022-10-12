@@ -293,15 +293,6 @@
       "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "content": "some comment",
-      "user_id": 1,
-      "lessionId": 1,
-      "courseId": 1
-    }
-  ],
   "user": [
     {
       "name": "Duy",
@@ -318,94 +309,27 @@
       "confirmPassword": "1234567890",
       "id": 3,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
-    },
-    {
-      "name": "trí",
-      "email": "tri@abc",
-      "password": "11111",
-      "confirmPassword": "11111",
-      "id": 4
-    },
-    {
-      "name": "trí",
-      "email": "tri@abc",
-      "password": "11111",
-      "confirmPassword": "11111",
-      "id": 5
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 6
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 7
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 8
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 9
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 10
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 11
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 12
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 13
-    },
-    {
-      "name": "tri",
-      "email": "tri@123",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "id": 14
     }
   ],
-  "course": [
+  "cart": [
     {
-      "id_course": 1,
-      "route": [
-        1,
-        2,
-        3,
-        4
-      ]
+      "userId": 2,
+      "id": 1,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true
     }
   ],
   "blogs": [
@@ -558,7 +482,7 @@
             {
               "id": 2,
               "name": "Các thẻ html thông dụng",
-              "desc": "",
+              "desc": "hello minh",
               "video": "https://www.youtube.com/embed/aF6MkmabsKU",
               "data": ""
             }
