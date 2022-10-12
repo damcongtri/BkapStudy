@@ -35,7 +35,8 @@
                     </div>
                     <div class="text-card">
                         <h1>{{course.price}} $</h1>
-                        <button class="btn1" routerLink="/learning/{{course.id}}/1/1">BUY NOW</button>
+                        <button class="btn1" routerLink="/learning/{{course.id}}/1/1" (click)="buyCourse(course)">BUY
+                            NOW</button>
                         <button class="btn2">TRIAL LEARNING</button>
                         <h2>{{course.name}}</h2>
                         <div class="text-ifo">

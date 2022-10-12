@@ -147,7 +147,7 @@
                           <a href=""><img src="{{item.image}}" class="flex-shrink-0 me-3 course-img" alt="..."></a>
                         </div>
                         <div class="text-course col-12 col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                          <h5 class="mt-0 name">{{item.name}}</h5>
+                          <h5 class="mt-0 name" routerLink="/course/{{item.id}}">{{item.name}}</h5>
                           <p class="">{{item.description}}</p>
                           <p class="author">By: <span class="author-color">{{item.author}}</span> </p>
 
@@ -187,7 +187,7 @@
                       <div class="card background ">
                         <a href=""> <img src="{{item.image}}" class="card-img-top img-latest" alt="..."></a>
                         <div class="text-item">
-                          <h5 class="">{{item.name}}</h5>
+                          <h5 class="" routerLink="/course/{{item.id}}">{{item.name}}</h5>
                           <div class="card-title d-flex flex-wrap">
                             <p>{{item.majob_1}}</p>
                             <p class="margin">|</p>
