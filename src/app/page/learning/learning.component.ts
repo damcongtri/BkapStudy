@@ -19,7 +19,8 @@ export class LearningComponent implements OnInit {
   lengthTrack: any
   dataUser: any
   CheckFormCreate: boolean = true
-  CheckReply: boolean = true
+  CheckReply: any
+  CheckReplyChild: any
   listNote: any = []
 
   listComment: any = []
@@ -42,11 +43,22 @@ export class LearningComponent implements OnInit {
     userId: new FormControl(),
     userName: new FormControl(''),
     avatar: new FormControl(''),
-    courseId: new FormControl()
+    courseId: new FormControl(),
+    reply: new FormControl([])
+  })
+  formReply = new FormGroup({
+    content: new FormControl('', Validators.required),
+    userId: new FormControl(),
+    userName: new FormControl(''),
+    avatar: new FormControl('')
   })
 
   ngOnInit(): void {
-    this.dataUser = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string) : null
+
+    // console.log(this.formComment.value.reply[0].contentReply);
+
+    this.dataUser = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null
+    console.log(this.dataUser);
 
     this.actRoute.paramMap.subscribe((prams: any) => {
       this.idCourse = prams.get('id')
@@ -80,16 +92,15 @@ export class LearningComponent implements OnInit {
     video.style.height = `${height}px`
     window.addEventListener("resize", _ => {
       console.log(widthVideo);
-
       widthVideo = video.offsetWidth
       height = Number(widthVideo) * 0.65
       console.log('height:', height);
-
       video.style.height = `${height}px`
     })
     // note 
     this.getListNote()
     // comment
+    this.getAllComment()
   }
   prevLession() {
     if (this.lessionId > 1 && this.trackId >= 1) {
@@ -159,23 +170,56 @@ export class LearningComponent implements OnInit {
   // comment
   getAllComment() {
     this.serviceComment.getCommentCourse(this.idCourse, this.lessionId).subscribe(data => {
-      this.listComment = data
+      this.listComment = data.sort(function (a, b) { return b.id - a.id })
     })
   }
   postComment() {
+    alert('ok')
     if (this.formComment.valid) {
-
       this.formComment.patchValue({
         lessionId: this.lessionId,
         userId: this.dataUser.id,
-        userName: this.dataUser.userName,
-        avatar: this.dataUser.avatar,
+        userName: this.dataUser.name,
+        avatar: this.dataUser.image,
         courseId: this.idCourse
       })
+      console.log(this.formComment.value);
+
       this.serviceComment.postCommetCourse(this.formComment.value).subscribe(data => {
         console.log(data);
         this.getAllComment()
       })
+      this.formComment.patchValue({ content: '' })
+    }
+  }
+  // reply
+  putComment(id_rep: any) {
+
+
+    if (this.CheckReply && this.formReply.value.content != '') {
+
+      this.formReply.patchValue({
+        userId: this.dataUser.id,
+        userName: this.dataUser.name,
+        avatar: this.dataUser.image
+      })
+      console.log(this.formReply.value);
+      console.log(this.formComment.value);
+      // this.formComment.patchValue({ reply: [...this.formComment.value.reply, this.formReply.value] })
+      this.serviceComment.getItemCommentCourse(id_rep).subscribe((data: any) => {
+        data.reply = [...data.reply, this.formReply.value]
+        this.serviceComment.putCommetCourse(data, id_rep).subscribe((db: any) => {
+          console.log(db);
+          this.formReply.patchValue({ content: '' })
+          this.getAllComment()
+        })
+      })
+      console.log(this.formComment.value);
+
+      this.CheckReply = null
+    } else {
+      this.CheckReply = id_rep
+      // document.getElementById('repChild')?.focus
     }
   }
 

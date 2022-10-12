@@ -13,4 +13,8 @@ export class FormserviceService {
   postUser(data:any) {
     return this.http.post(url,data)
   } 
+
+  getUser(data:any) {
+    return this.http.get<any[]>(`${url}?email=${data.email}&password=${data.password}`)
+  }
 }

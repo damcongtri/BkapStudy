@@ -191,7 +191,7 @@
 }
 .item-banner {
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 .user-img-name img{ 
     width: 120px;
@@ -236,7 +236,10 @@
 }
 /* right */
 .information-course {
-    border: 1px solid #AB75F0;
+    background: #252841;
+    padding: 30px;
+    box-shadow: 5px 10px #1d1e26;
+    border-radius: 10px;
 }
 .right .content-course a .infor-img {
     width: 500px;
@@ -255,8 +258,16 @@
     padding-left: 30px;
 
 }
-
-
+.name_cou {
+    font-size: 18px;
+}
+.i {
+    font-size: 18px;
+}
+.text-infor p:last-child {
+    font-size: 15px;
+    padding-top: 5px;
+}
 
 /* footer  */
 footer {

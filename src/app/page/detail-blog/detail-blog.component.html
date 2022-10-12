@@ -2,26 +2,24 @@
     <div class="detail-blog d-flex flex-wrap justify-content-around">
         <div class="content col-lg-8 col-md-8">
             <div class="blog_image " style="margin: 0 auto;">
-                <img class="card-img"
-                    src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/309117628_1259485451530461_2884497390203553794_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=730e14&_nc_ohc=QW3rwc9Wr7sAX84Wb1a&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_7PpsHYny71RDJGYjBshhNgiCqtXQgiUdfNUCzKv8waQ&oe=633720B0"
-                    alt="">
+                <img class="card-img" src="{{blog.image}}" alt="">
             </div>
             <div class="blog_title text-light">
-                <h3 class="mt-4 mb-2">The spectacle before us was indeed sublime</h3>
+                <h3 class="mt-4 mb-2">{{blog.title}}</h3>
                 <div class="blog_authorDate d-flex justify-content-between align-items-center p-2 mb-3">
 
                     <div class="date text-light m-0 text-end ">
-                        July 26, 2019 - 1 min read
+                        {{blog.date}}
                     </div>
                     <div class="blog_author d-flex">
 
                         <div class="mx-auto d-flex align-items-center">
-                            <div class="avatar" style="width: 30px; border-radius: 50%; overflow: hidden;">
-                                <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-1/273458155_1108489356630072_1055490645894228383_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=xNCHsHmOpqsAX8zIoZ0&_nc_ht=scontent.fhan3-1.fna&oh=00_AT8ROcvPnLgDO8YIzv3RPUJNQ-_lFSGk_GmswkfPZuLPrQ&oe=6336C75C"
-                                    class="img-fluid rounded-top" alt="">
+                            <div class="avatar"
+                                style="width: 30px; height: 30px; border-radius: 50%; overflow: hidden;">
+                                <img src="{{blog.img_author}}" class="img-fluid rounded-top" alt="">
                             </div>
                             <div class=" ms-2 author_name">
-                                Minh ca
+                                {{blog.author}}
                             </div>
                         </div>
 
@@ -30,27 +28,14 @@
 
             </div>
             <div class="blog_text">
-                Welcome, it’s great to have you here.
-
-                We know that first impressions are important, so we’ve populated your new site with some initial
-                getting started posts that will help you get familiar with everything in no time. This is the first
-                one!
-
-                A few things you should know upfront:
-
-                Ghost is designed for ambitious, professional publishers who want to actively build a business
-                around their content. That’s who it works best for.
-                The entire platform can be modified and customised to suit your needs. It’s very powerful, but does
-                require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who
-                just want a simple personal blog.
-                For the best experience we recommend downloading the Ghost Desktop App for your computer, which is
-                the best way to access your Ghost site on a desktop device.
-
-                Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100%
-                self funded by revenue from our Ghost(Pro) service, and every penny we make is re-invested into
-                funding further development of free, open source technology for modern publishing.
+                {{blog.content}}
+                <br><br>
+                {{blog.content2}}
+                <br><br>
+                {{blog.content3}}
+                <br><br>
+                {{blog.content4}}
             </div>
-
             <div class="comment">
                 <div class="comment_title d-flex align-items-center">
                     <h3 class="pe-3">Comments</h3>
@@ -117,7 +102,7 @@
                         <div class="image_blog">
                             <!-- <img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/instagram3.jpg?v=1233786014105632074"
                                     height="100%" class="card-img" alt=""> -->
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -137,7 +122,7 @@
                 <div class="d-flex ">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
                         <div class="image_blog">
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -157,7 +142,7 @@
                 <div class="d-flex ">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
                         <div class="image_blog">
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -178,7 +163,7 @@
                 <div class="d-flex ">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
                         <div class="image_blog">
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -198,7 +183,7 @@
                 <div class="d-flex ">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
                         <div class="image_blog">
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -218,7 +203,7 @@
                 <div class="d-flex ">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
                         <div class="image_blog">
-                            <img width="100%" src="/image/vu-tat-nen.jpg" alt="">
+                            <img width="100%" src="assets/image/vu-tat-nen.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
@@ -238,6 +223,7 @@
 
         </div>
     </div>
+
 
 
     <script src="./blogDetail.js"></script>

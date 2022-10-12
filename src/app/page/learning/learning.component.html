@@ -149,9 +149,7 @@
 
                 <div class="comment_form d-flex align-items-center ">
                     <div class=" comment_form-avatar">
-                        <img class="card-img"
-                            src="https://yt3.ggpht.com/yti/AJo0G0kASXIEL7flCJzyxDSkXARqb4mH8xh954E8Xw=s88-c-k-c0x00ffffff-no-rj-mo"
-                            alt="">
+                        <img class="card-img" src="{{dataUser.image}}" alt="">
                     </div>
                     <div class="comment_form-content w-100 p-3">
                         <div class="comment_ipComment position-relative">
@@ -174,29 +172,56 @@
                         </div>
                         <div class="comment_show-content w-100 ps-3">
                             <div class="comment_show-content--user d-flex align-items-center">
-                                <div class="user_name pe-4">{{item.name}}</div>
+                                <div class="user_name pe-4">{{item.userName}}</div>
                                 <div class="user_date">2 munites ago</div>
                             </div>
                             <div class="comments_show-item--content">
                                 {{item.content}}
                             </div>
                             <div class="comment_show-item--reply d-flex mt-3">
-                                <div class="comment_show-item--ip w-100 align-items-center " style="display: none;"
-                                    id="ip-reply">
-                                    <input type="text" placeholder="comment here..." class="w-100 m-0" id="ip">
-                                </div>
-                                <div class="comment_show-item--btn " (click)="CheckReply">
+
+                                <form (ngSubmit)="putComment(item.id)" [formGroup]="formReply"
+                                    class="comment_show-item--ip w-100 align-items-center "
+                                    *ngIf="CheckReply == item.id" id="ip-reply">
+                                    <!-- <form [formGroup]="formReply"> -->
+                                    <input id="repChild" formControlName="content" type="text"
+                                        placeholder="comment here..." class="w-100 m-0" id="ip">
+                                    <!-- </form> -->
+                                </form>
+
+                                <div class="comment_show-item--btn " (click)="putComment(item.id)">
                                     Reply
                                 </div>
 
                                 <a class="comment_show-item--close m-0 d-flex align-items-center">
-                                    <div id="close" style="display: none;" (click)="!CheckReply">
+                                    <div id="close" *ngIf="CheckReply == item.id" (click)="CheckReply= null">
                                         <i class=" fa-solid fa-x"></i>
                                     </div>
                                 </a>
+
+                            </div>
+                            <div class="reply">
+                                <div class="comment_show-item d-flex p-3" style="border: none !important;"
+                                    *ngFor="let itemRep of item.reply; let i =index">
+                                    <div class=" comment_form-avatar">
+                                        <img class="card-img" src="{{itemRep.avatar}}" alt="">
+                                    </div>
+                                    <div class="comment_show-content w-100 ps-3">
+                                        <div class="comment_show-content--user d-flex align-items-center">
+                                            <div class="user_name pe-4">{{itemRep.userName}}</div>
+                                            <div class="user_date">2 munites ago</div>
+                                        </div>
+                                        <div class="comments_show-item--content">
+                                            {{itemRep.content}}
+                                        </div>
+
+
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
 

@@ -350,7 +350,6 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -535,6 +534,14 @@ p {
 
 .title .author {
     color: #fff;
+}
+.text-course .name:hover { 
+    color: #AB75F0 !important;
+    cursor: pointer;
+}
+.text-item h5:hover {
+    color: #AB75F0 !important;
+    cursor: pointer;
 }
 
 

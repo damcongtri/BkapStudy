@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 
   constructor() { }
-
+  user:any;
   ngOnInit(): void {
+      this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string ) : null;
+      
   }
 
 }

@@ -21,7 +21,7 @@
 }
 
 .courseDetail .main .left2 {
-    margin-top: -270px;
+    margin-top: 30px;
 }
 
 .courseDetail .main .right {
@@ -326,7 +326,15 @@
 }
 
 /* end btn-text-card */
+@media screen and (max-width:1500px) {
 
+    /* courseDetail */
+    .courseDetail .main .left2 {
+        margin-top: -200px;
+    }
+
+
+}
 
 @media screen and (max-width:1024px) {
 
@@ -336,7 +344,7 @@
     }
 
     .courseDetail .main .left2 {
-        margin-top: -350px;
+        margin-top: -360px;
     }
 
 
