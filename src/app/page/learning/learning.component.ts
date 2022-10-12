@@ -56,6 +56,9 @@ export class LearningComponent implements OnInit {
 
   ngOnInit(): void {
 
+    setInterval(_ => {
+      this.getAllComment()
+    }, 2000)
     // console.log(this.formComment.value.reply[0].contentReply);
 
     this.dataUser = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null
