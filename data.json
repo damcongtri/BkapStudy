@@ -448,6 +448,25 @@
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
       "status_1": true,
       "userId": 2
+    },
+    {
+      "id": 2,
+      "name": " Master in website design and prototyping in sketch",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "userId": 2
     }
   ],
   "blogs": [
@@ -592,56 +611,177 @@
           "lession": [
             {
               "id": 1,
-              "name": "Cấu trúc file html",
+              "name": "Bạn học được gì sau khóa học",
               "desc": "HTML cơ bản cấu trúc file html",
-              "video": "https://www.youtube.com/embed/yxsWLr8AdUU",
+              "video": "https://www.youtube.com/embed/R6plN3FvzFY",
               "data": ""
             },
             {
               "id": 2,
-              "name": "Các thẻ html thông dụng",
-              "desc": "hello minh",
-              "video": "https://www.youtube.com/embed/aF6MkmabsKU",
+              "name": "Tìm hiểu HTML CSS",
+              "desc": "HTML cơ bản cấu trúc file html",
+              "video": "https://www.youtube.com/embed/zwsPND378OQ",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Làm quen với Dev tools",
+              "desc": "HTML cơ bản cấu trúc file html",
+              "video": "https://www.youtube.com/embed/7BJiPyN4zZ0",
               "data": ""
             }
           ]
         },
         {
           "id": 2,
-          "name": "content",
+          "name": "Làm quen với HTML",
           "lession": [
             {
               "id": 1,
-              "name": "Intro",
-              "desc": "",
-              "video": "",
+              "name": "Cấu trúc file HTML",
+              "desc": "Làm quen với HTML",
+              "video": "https://www.youtube.com/embed/LYnrFSGLCl8",
               "data": ""
             },
             {
               "id": 2,
-              "name": "set up environment",
-              "desc": "",
-              "video": "",
+              "name": "Thẻ thông dụng HTML",
+              "desc": "Làm quen với HTML",
+              "video": "https://www.youtube.com/embed/LYnrFSGLCl8",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Ví dụ cấu trúc HTML",
+              "desc": "Làm quen với HTML",
+              "video": "https://www.youtube.com/embed/W0vEUmyvthQ",
+              "data": ""
+            },
+            {
+              "id": 4,
+              "name": "Khai báo biến",
+              "desc": "Học lập trình Javascript cơ bản",
+              "video": "https://www.youtube.com/embed/CLbx37dqYEI",
               "data": ""
             }
           ]
         },
         {
           "id": 3,
-          "name": "end",
+          "name": "Javascript Nâng Cao",
           "lession": [
             {
               "id": 1,
-              "name": "Intro",
-              "desc": "",
-              "video": "",
+              "name": "Ra mắt khóa Javascript nâng cao (javascript advanced) tại F8!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/MGhw6XliFgo",
               "data": ""
             },
             {
               "id": 2,
-              "name": "set up environment",
-              "desc": "",
-              "video": "",
+              "name": "IIFE trong Javascript là gì? Hiểu IIFE cùng F8 nha!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/N-3GU1F1UBY",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Scope trong Javascript? Hiểu thật rõ về phạm vi nào!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/5N8vz_VmszE",
+              "data": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "courseId": 2,
+      "trackItem": [
+        {
+          "id": 1,
+          "name": "ReactJS 2022",
+          "lession": [
+            {
+              "id": 1,
+              "name": "ReactJS là gì? Tại sao nên học ReactJS?",
+              "desc": "ReactJS 2022",
+              "video": "https://www.youtube.com/embed/yxsWLr8AdUU",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "Các thẻ html thông dụng",
+              "desc": "HTML cơ bản cấu trúc file html",
+              "video": "https://www.youtube.com/embed/aF6MkmabsKU",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Attribute trong HTML",
+              "desc": "HTML cơ bản cấu trúc file html",
+              "video": "https://www.youtube.com/embed/UYpIh5pIkSA",
+              "data": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Javascript Cơ Bản",
+          "lession": [
+            {
+              "id": 1,
+              "name": "Javascript có thể làm được gì? Giới thiệu qua về trang F8 | Học lập trình Javascript cơ bản",
+              "desc": "Học lập trình Javascript cơ bản",
+              "video": "https://www.youtube.com/embed/0SJE9dYdpps",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "Cài đặt môi trường",
+              "desc": "Học lập trình Javascript cơ bản",
+              "video": "https://www.youtube.com/embed/efI98nT8Ffo",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Sử dụng JS trong file HTML",
+              "desc": "Học lập trình Javascript cơ bản",
+              "video": "https://www.youtube.com/embed/W0vEUmyvthQ",
+              "data": ""
+            },
+            {
+              "id": 4,
+              "name": "Khai báo biến",
+              "desc": "Học lập trình Javascript cơ bản",
+              "video": "https://www.youtube.com/embed/CLbx37dqYEI",
+              "data": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Javascript Nâng Cao",
+          "lession": [
+            {
+              "id": 1,
+              "name": "Ra mắt khóa Javascript nâng cao (javascript advanced) tại F8!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/MGhw6XliFgo",
+              "data": ""
+            },
+            {
+              "id": 2,
+              "name": "IIFE trong Javascript là gì? Hiểu IIFE cùng F8 nha!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/N-3GU1F1UBY",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Scope trong Javascript? Hiểu thật rõ về phạm vi nào!",
+              "desc": "Học lập trình Javascript nâng cao",
+              "video": "https://www.youtube.com/embed/5N8vz_VmszE",
               "data": ""
             }
           ]
