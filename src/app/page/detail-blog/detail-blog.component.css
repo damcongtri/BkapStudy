@@ -2,6 +2,8 @@
     padding-bottom: 20px;
     color: #ccc;
     border-bottom: 3px solid #ab75f0;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 
 main {
