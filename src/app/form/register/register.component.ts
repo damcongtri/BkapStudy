@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
     if (!this.formregister.invalid) {
       this.formservice.postUser(this.formregister.value).subscribe((data)=>{
        if(data){
-        this.Router.navigate(['/login'])
+        this.Router.navigate(['/user/login'])
        }
       })
     }
