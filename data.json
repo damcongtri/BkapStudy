@@ -112,11 +112,7 @@
     },
     {
       "id": 7,
-<<<<<<< HEAD
       "name": " Master of Computer Science in Data ScienceAI and Machine Learning",  
-=======
-      "name": " Master of Computer Science in Data Science",
->>>>>>> 4b484ef165b2d3419bcd65df8ef216f24cb8dfb6
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 13,
@@ -319,9 +315,9 @@
     {
       "userId": 2,
       "id": 1,
-      "name": " Learn IOS development, Website design, Freelancing",
+      "name": " Master of Computer Science in Data ScienceAI and Machine Learning",
       "author": "John Smith",
-      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "description": "Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.",
       "price": 1000,
       "category_id": [
         1

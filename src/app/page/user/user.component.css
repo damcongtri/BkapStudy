@@ -261,8 +261,9 @@
 }
 
 .a-img {
-    max-height: 200px !important;
-    overflow: hidden;
+   height: 190px;
+   width: 100%;
+   overflow-y: hidden;
 }
 
 .content-course {
