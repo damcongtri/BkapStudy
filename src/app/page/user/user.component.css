@@ -232,7 +232,7 @@
 
 .introduce-active {
     background: #252841;
-    padding: 30px;
+    padding: 40px;
     box-shadow: 5px 10px #1d1e26;
     border-radius: 10px;
 }
@@ -261,9 +261,11 @@
 }
 
 .a-img {
-    max-height: 200px !important;
-    overflow: hidden;
+   max-height: 180px;
+   width: 100%;
+   overflow: hidden;
 }
+
 
 .content-course {
     border-bottom: 1px solid #AB75F0;
@@ -463,6 +465,9 @@ body {
 p {
     margin: 0;
 }
+.use-pd {
+    padding-left: 80px;
+}
 
 
 /* responsive */
@@ -491,6 +496,10 @@ p {
         width: 600px;
         height: auto;
     }
+    .use-pd {
+        padding-left: 10px !important;
+    }
+
 }
 
 @media screen and (max-width:768px) {

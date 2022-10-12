@@ -19,18 +19,20 @@
                 <div class="showFilterSearch" *ngIf="keySearch">
                     <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;"
                         class="scrollbar">
-                        <ul *ngFor=" let items of product | search: keySearch ">
-                            <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2 ">
-                                <a href="" style="text-decoration: none; color:#999ebe; ">{{items.name}}</a>
+                        <ul>
+                            <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"
+                                *ngFor=" let items of product | search: keySearch ">
+                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
                             </li>
-                            <li style="width: 500px;  max-width: 100%; list-style: none;" class=" searchs  p-2">
-                                <a href="" style="text-decoration: none; color:#999ebe ;">{{items.author}}</a>
+                            <li style="width: 500px;  max-width: 100%; list-style: none;" class=" searchs p-2"
+                                *ngFor=" let items of product | search: keySearch ">
+                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.author}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-
+                
+                
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">
