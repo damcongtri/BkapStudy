@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
   constructor(private http : HttpClient, private  homeservice: HomeService) { }
   user:any
   keySearch: any ;
-
   product:any;
 
   ngOnInit(): void {

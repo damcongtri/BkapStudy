@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+// import { stringify } from 'querystring';
 import { FormserviceService } from 'src/app/service/formservice.service';
 
 @Component({
@@ -31,9 +32,12 @@ export class LoginComponent implements OnInit {
     if (!this.formlogin.invalid) {
       this.formservice.getUser(this.formlogin.value).subscribe((data)=>{
       if(data[0]){
-        let _data: any = JSON.stringify(data[0]);
-        localStorage.setItem('acc',_data);
-        console.log(_data);
+        localStorage.setItem('acc',JSON.stringify({
+          name:data[0].name,
+          image:data[0].image,
+          id:data[0].id,
+          email:data[0].email,
+        }));
         this.Router.navigate(['/']);
       }
       else {
