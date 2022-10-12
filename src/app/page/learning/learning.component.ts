@@ -40,6 +40,7 @@ export class LearningComponent implements OnInit {
   formComment = new FormGroup({
     content: new FormControl('', Validators.required),
     lessionId: new FormControl(),
+    trackId: new FormControl(),
     userId: new FormControl(),
     userName: new FormControl(''),
     avatar: new FormControl(''),
@@ -68,7 +69,7 @@ export class LearningComponent implements OnInit {
 
       this.lessionId = prams.get('lession')
 
-
+      this.getAllComment()
       this.service.getRouteCourse(this.idCourse).subscribe((data: any) => {
         console.log(data);
         this.listRoute = data[0].trackItem
@@ -169,8 +170,13 @@ export class LearningComponent implements OnInit {
 
   // comment
   getAllComment() {
-    this.serviceComment.getCommentCourse(this.idCourse, this.lessionId).subscribe(data => {
-      this.listComment = data.sort(function (a, b) { return b.id - a.id })
+    this.serviceComment.getCommentCourse(this.idCourse).subscribe((data: any) => {
+      console.log(data);
+
+      this.listComment = data.filter((item: any) => (item.trackId == this.trackId && item.lessionId == this.lessionId))
+      this.listComment = this.listComment.sort(function (a: any, b: any) { return b.id - a.id })
+      console.log(this.listComment);
+
     })
   }
   postComment() {
@@ -178,6 +184,7 @@ export class LearningComponent implements OnInit {
     if (this.formComment.valid) {
       this.formComment.patchValue({
         lessionId: this.lessionId,
+        trackId: this.trackId,
         userId: this.dataUser.id,
         userName: this.dataUser.name,
         avatar: this.dataUser.image,

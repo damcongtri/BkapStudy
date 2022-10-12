@@ -428,6 +428,11 @@
       "view": 2000,
       "status_1": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 7,
+      "courseId": 4,
+      "id": 1
+    },
+    {
       "userId": 2
     },
     {
@@ -447,11 +452,12 @@
       "view": 2000,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
       "status_1": true,
-      "userId": 2
+      "userId": 7,
+      "courseId": 1,
+      "id": 2
     },
     {
-      "id": 2,
-      "name": " Master in website design and prototyping in sketch",
+      "name": " Build responsive real world websites with HTML5 and CSS3",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
@@ -465,8 +471,30 @@
       "date": 2000,
       "view": 2000,
       "status_1": true,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
-      "userId": 2
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 7,
+      "courseId": 3,
+      "id": 3
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 4,
+      "courseId": 1,
+      "id": 4
     }
   ],
   "blogs": [
@@ -607,7 +635,7 @@
       "trackItem": [
         {
           "id": 1,
-          "name": "intro",
+          "name": "Introduce",
           "lession": [
             {
               "id": 1,
@@ -668,29 +696,22 @@
         },
         {
           "id": 3,
-          "name": "Javascript Nâng Cao",
+          "name": "Hoàn thành khóa học",
           "lession": [
             {
               "id": 1,
-              "name": "Ra mắt khóa Javascript nâng cao (javascript advanced) tại F8!",
+              "name": "ứng tuyển xin việc làm",
               "desc": "Học lập trình Javascript nâng cao",
               "video": "https://www.youtube.com/embed/MGhw6XliFgo",
               "data": ""
             },
             {
               "id": 2,
-              "name": "IIFE trong Javascript là gì? Hiểu IIFE cùng F8 nha!",
+              "name": "Hoàn thành khóa học",
               "desc": "Học lập trình Javascript nâng cao",
               "video": "https://www.youtube.com/embed/N-3GU1F1UBY",
               "data": ""
-            },
-            {
-              "id": 3,
-              "name": "Scope trong Javascript? Hiểu thật rõ về phạm vi nào!",
-              "desc": "Học lập trình Javascript nâng cao",
-              "video": "https://www.youtube.com/embed/5N8vz_VmszE",
-              "data": ""
-            }
+            } 
           ]
         }
       ]

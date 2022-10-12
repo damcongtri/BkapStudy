@@ -34,9 +34,12 @@
                         <!-- <div class="play"><i class="fa-solid fa-play"></i></div> -->
                     </div>
                     <div class="text-card">
-                        <h1>{{course.price}} $</h1>
-                        <button class="btn1" routerLink="/learning/{{course.id}}/1/1" (click)="buyCourse(course)">BUY
+                        <h1 *ngIf="!checkCourse[0]">{{course.price}} $</h1>
+                        <h1 *ngIf="checkCourse[0]" style="color: aquamarine;">Have Owned</h1>
+                        <button class="btn1" (click)="buyCourse(course)" *ngIf="!checkCourse[0]">BUY
                             NOW</button>
+                        <button class="btn1" routerLink="/learning/{{course.id}}/1/1" *ngIf="checkCourse[0]">Learn
+                            Now</button>
                         <button class="btn2">TRIAL LEARNING</button>
                         <h2>{{course.name}}</h2>
                         <div class="text-ifo">

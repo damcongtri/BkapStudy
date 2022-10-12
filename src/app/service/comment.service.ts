@@ -9,8 +9,8 @@ const urlBlog = 'https://62a04fa9202ceef7086a607e.mockapi.io/commentsBlog'
 export class CommentService {
 
   constructor(private http: HttpClient) { }
-  getCommentCourse(id_course: any, id_lession: any): Observable<any[]> {
-    return this.http.get<any[]>(`${urlCourse}?courseId=${id_course}&lessionId=${id_lession}`)
+  getCommentCourse(id_course: any): Observable<any[]> {
+    return this.http.get<any[]>(`${urlCourse}?courseId=${id_course}`)
   }
   getItemCommentCourse(id: any): Observable<any[]> {
     return this.http.get<any[]>(`${urlCourse}/${id}`)

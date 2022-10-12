@@ -37,22 +37,22 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  
+
   get form(): any {
     return this.formregister.controls;
   }
   onSubmit() {
     if (!this.formregister.invalid) {
-      let pw1 =  this.formregister.value.password ;
+      let pw1 = this.formregister.value.password;
       console.log(pw1)
       let pw2 = this.formregister.value.confirmPassword;
       this.formregister.patchValue({ image: 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg' })
       this.formservice.postUser(this.formregister.value).subscribe((data) => {
-          if(pw1 != pw2){
-            alert("Passwords did not match");  
-          } else {
-            alert("Password created successfully");  
-           if (data){
+        if (pw1 != pw2) {
+          alert("Passwords did not match");
+        } else {
+          alert("Password created successfully");
+          if (data) {
             Swal.fire({
               position: 'center',
               icon: 'success',
@@ -61,12 +61,12 @@ export class RegisterComponent implements OnInit {
               timer: 1500
             })
             this.Router.navigate(['/user/login'])
-           
-           }
+
           }
-          
-      
-      
+        }
+
+
+
       })
     }
     else {
