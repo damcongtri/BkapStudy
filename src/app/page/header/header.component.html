@@ -17,35 +17,20 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input [(ngModel)]="keySearch" placeholder="Search courses, articles, videos,..." type="text">
                 <div class="showFilterSearch" *ngIf="keySearch">
-<<<<<<< HEAD
-                    <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;" class="scrollbar"  >       
-                       <ul   *ngFor=" let items of product | search: keySearch " >
-                        <li   style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2 "  >
-                            <a href="" style="text-decoration: none; color:#999ebe; "  >{{items.name}}</a>
-                        </li>
-                        <li  style="width: 500px;  max-width: 100%; list-style: none;"  class=" searchs  p-2" >
-                            <a href="" style="text-decoration: none; color:#999ebe ;"  >{{items.author}}</a>
-                        </li>
-                       </ul>
-                     </div>
-=======
                     <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;"
                         class="scrollbar">
-                        <ul>
-                            <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"
-                                *ngFor=" let items of product | search: keySearch ">
-                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
+                        <ul *ngFor=" let items of product | search: keySearch ">
+                            <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2 ">
+                                <a href="" style="text-decoration: none; color:#999ebe; ">{{items.name}}</a>
                             </li>
-                            <li style="width: 500px;  max-width: 100%; list-style: none;" class=" searchs p-2"
-                                *ngFor=" let items of product | search: keySearch ">
-                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.author}}</a>
+                            <li style="width: 500px;  max-width: 100%; list-style: none;" class=" searchs  p-2">
+                                <a href="" style="text-decoration: none; color:#999ebe ;">{{items.author}}</a>
                             </li>
                         </ul>
                     </div>
->>>>>>> 4b484ef165b2d3419bcd65df8ef216f24cb8dfb6
                 </div>
-                
-                
+
+
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">

@@ -309,6 +309,27 @@
       "confirmPassword": "1234567890",
       "id": 3,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+    },
+    {
+      "name": "tri",
+      "email": "tri@123",
+      "password": "11111",
+      "confirmPassword": "11111",
+      "id": 4
+    },
+    {
+      "name": "troooo",
+      "email": "tro@123",
+      "password": "11111",
+      "confirmPassword": "11111",
+      "id": 5
+    },
+    {
+      "name": "tru",
+      "email": "tru@123",
+      "password": "11111",
+      "confirmPassword": "11111",
+      "id": 6
     }
   ],
   "cart": [
@@ -360,7 +381,8 @@
       "title": "Rèn luyện tư duy và áp dụng kiến thức đã học vào thực hành",
       "user_id": 1,
       "content": "Mình có đọc qua vài bình luận ở dưới một số video trong khóa JS cơ bản và thấy một số bạn muốn có thêm bài tập thực hành (cụ thể là ...",
-      "id": 1
+      "id": 1,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/1021/6173be68944ad.jpg",
@@ -380,7 +402,8 @@
       "title": "GenZ theo ngành IT và suy nghĩ hơi hơi sai lệch 😗",
       "user_id": 3,
       "content": "Hi, lại là mình đây hehe. Hôm nay mình chia sẻ về những suy nghĩ sai của một người mới (cụ thể hơn là các bác sinh viên) tham gia...",
-      "id": 3
+      "id": 3,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/317/6141f41c37485.png",
@@ -390,10 +413,9 @@
       "title": "NFT là gì?",
       "user_id": 4,
       "content": "Dạo gần đây sự bùng nổ tin tức trong thế giới block chain mà chúng ta đang không biết chính xác chuyện gì đang xảy ra. Đó là cảm...",
-      "id": 4
-    }
-  ],
-  "blog": [
+      "id": 4,
+      "recent": true
+    },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/3370/626fc1a91b92a.png",
       "author": "Nam Vũ",
@@ -405,7 +427,8 @@
       "content2": "Bài tập và lý thuyết có thể tìm trên w3school, geeksforgeeks hoặc trên youtube (recommend: Abdul Bari - ông chú ấn độ uy tín khỏi bàn))),",
       "content3": "Về sách thì có mình đang đọc quyển algorithm grokking (chuyên về thuật toán, gồm psuedo code và hình ảnh, các tiếp cận dành cho người người mới bắt đầu nên cực dễ hiều, chỉ cần biết một số từ vựng tiếng anh là được) và javascript the definitive guide để hiều thêm về JS",
       "content4": "Những điều mình chia sẻ bên trên là những gì mình được học ở cấu trúc bài giảng ở đại học, nên các bạn có thể tin tưởng nhé. Mình cũng triển khai thử binary search với bubble sort thấy nó bao quát được khá nhiều, bao gồm cả vòng lặp while, for, làm việc với mảng… (và debug mệt nghỉ))). Chúc các bạn học tập vui vẻ, và cảm ơn anh Sơn vì khóa học rất hữu ích !!!",
-      "id": 1
+      "id": 1,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/1021/6173be68944ad.jpg",
@@ -418,7 +441,8 @@
       "content2": "Cách tiếp cận oop rất thực tế. Dễ mô hình hóa các bài toán, các đối tượng bên ngoài đời sống thành mã code. Dễ bảo trì, dễ mở rộng và code nhìn gọn gòn sạch hơn. Về ưu điểm này thì sau khi đi qua các tính chất của OOP ở phần tiếp theo các bạn sẽ hiểu rõ hơn. Trong OOP, Class là 1 kiểu dữ liệu, 1 khuôn mẫu giúp mô hình hóa các đối tượng thực tế. Class sẽ có các thuộc tính (properties) và các phương thức (methods) tương ứng với thuộc tính và hành động thực tế bên ngoài. Nếu ta coi Class là 1 khuôn mẫu thì Object(đối tượng) là 1 thể hiện được tạo ra từ khuôn mẫu đó. Ví dụ: Lớp (Class) sẽ có các thể hiện là các Đối tượng(Object) như: BackendDeveloper, FrontendDeveloper, FullStackDeveloper.",
       "content3": "Tiêp theo chúng ta sẽ cùng nhau tìm hiểu 4 tính chất của lập trình hướng đối tượng (OOP). Tính đóng gói (Encapsulation) hay còn gọi là hiding information giúp gom nhóm lại các thuộc tính (properties), phương thức (methods) và nhiều thành phần khác thành một đối tượng hay một đơn vị. Tính đóng gói được triển khai bằng cách sử dụng access modifier: public, private, protected, internal. public: Có thể truy cập từ bất cứ đâu, private: Chỉ có thể truy cập ở bên trong class, protected: Chỉ có thể truy cập ở bên trong class và các class kế thừa từ class đó, internal: Giống như public nhưng chỉ hạn chế trong 1 assembly. Giải thích về intenal: Hiểu đơn giản là ta có 1 ứng dụng U gọi 1 thư viện bên ngoài L. Trong thư viện L này có class C khai báo internal. Các class khác trong thư viện L này có thể truy cập class C này nhưng ứng dụng U thì không thể do khác assembly. Tính kế thừa cho phép tạo ra 1 class con từ 1 class có sẵn và mở rộng class đó. Các class con có thể kế thừa lại các thuộc tính (properties) và phương thức (methods) của class cha, có thể không cần định nghĩa lại các phương thức hoặc tái định nghĩa (override) hoặc thêm các phương thức sử dụng riêng ở lớp con. Tính chất này giúp tái sử dụng, tận dụng mã nguồn có sẵn.",
       "content4": "Tổng kết: Qua bài này chúng ta đã cùng nhau tìm hiểu cơ bản về lập trình hướng đối tượng, các tính chất và ví dụ code demo. Lý thuyết lập trình OOP đều giống nhau nhưng tùy vào kinh nghiệm, tư duy mà mỗi lập trình viên sẽ có cách hiểu, cách triển khai khác nhau. Hy vọng bài viết này sẽ giúp ích cho những bạn mới tiếp cận lập trình hướng đối tượng OOP. Nếu có câu hỏi hay vấn đề muốn thảo luận trao đổi thì hãy comment dưới bài viết nhé. Hy vọng được thảo luận cùng anh em. Nếu thấy bài viết hay và bổ ích thì cho mình xin 1 tym nhé. Cảm ơn và chúc các anh em một ngày cuối tuần tuyệt vời!",
-      "id": 2
+      "id": 2,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/707/6155ed6c19af9.png",
@@ -444,7 +468,8 @@
       "content2": "NFT viết tắt của Non-fungible token(loại Token không thể thay thế). Khi nghĩ tới nghĩa đen thì mình vẫn cảm thấy nó khá là mơ hồ, nhưng ít nhất thì nó cũng cho chúng ta 1 ý tưởng hiểu nó có nghĩa là duy nhất và không thể bị thay thế bằng thứ khác. Ví dụ như bạn đổi 1 bitcoin để lấy 1 bitcoin khác vậy thì chẵn có gì khác biệt, nhưng nếu bạn đổi 1 tấm thẻ pokemon của mình với 1 tấm pokemon khác của bạn bè thì lúc này bạn đã có 1 thứ hoàn toàn khác. NFT được đại diện cho các tài sản trong thế giới thực như âm nhạc, nghệ thuật, video, các vật phẩm trò chơi… Chúng được mua và bán thường xuyên với tiền điện tử. NFT tạo ra sự khan hiếm kỹ thuật số. Điều này hoàn toàn trái ngược với hầu hết các sáng tạo kỹ thuật số những thứ luôn luôn có nguồn cung vô hạn. Theo giả thuyết thì việc cắt giảm nguồn cung sẽ làm tăng giá trị của một tài sản nhất định, giả sử nó đang có nhu cầu.",
       "content3": "Về cơ bản, NFT giống như vật phẩm của nhà sưu tập vật lý, chỉ là vật phẩm sưu tầm ở đây là vật phẩm kỹ thuật số. Vì vậy, thay vì nhận được một bức tranh sơn dầu thực tế để treo trên tường, thay vào đó, người mua nhận được một tệp kỹ thuật số. NFT có tính độc quyền nên tại 1 thời điểm chỉ có 1 người người được sở hữu nó. Ngoài ra mình cũng muốn nhắc đến cho các bạn 1 NFT không thể bị chia nhỏ hay thế thế bởi các đơn vị nhỏ nào. Ví dụ như 1 tờ 500k = 5 tờ 100k. Thì giá trị của tờ 500k có thể bị chia nhỏ và được thay thế bởi 1 số lượng đơn vị cấp thấp hơn. Còn đối với NFT chứa nội dung là 1 bức trang, nếu chúng ta chia làm 4 ra thì 4 mảnh tranh không bằng 1 bức tranh được. NFT được áp dụng vào nghệ thuật(tranh, ảnh, video, nhạc), các trò chơi điện tử, những vật phẩm trong game có thể là các NFT. Trong bất động sản NFT có thể số hoá quyền sở hữu của các tài thực.",
       "content4": "Vì các tính chất không thể thay thế, sự độc quyền đã làm nên sự khan hiếm của NFT và đối với những người quan tâm NFT thì nó trở nên thật sự giá trị. Tương lai vẫn còn rất nhiều thứ có thể được ứng dụng NFT vào thực tiễn, chứ không đơn thuần là những tấp ảnh trông có vẻ như vô nghĩa.",
-      "id": 4
+      "id": 4,
+      "recent": true
     }
   ],
   "tags": [

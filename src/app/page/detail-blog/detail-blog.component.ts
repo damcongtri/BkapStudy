@@ -14,10 +14,13 @@ export class DetailBlogComponent implements OnInit {
   constructor(private blogService: BlogService, private activatedRouter: ActivatedRoute) { }
 
   ngOnInit(): void {
-    let id = this.activatedRouter.snapshot.params['id'];
-    this.blogService.findBlog(id).subscribe((data) => {
-      this.blog = data;
+    this.activatedRouter.paramMap.subscribe((param: any) => {
+      let id: any = param.get(['id'])
+      this.blogService.findBlog(id).subscribe((data) => {
+        this.blog = data;
+      })
     })
+
   }
 
   btnReply() {

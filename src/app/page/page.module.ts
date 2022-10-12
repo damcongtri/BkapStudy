@@ -15,6 +15,7 @@ import { UserComponent } from './user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchFilterPipe } from '../search-filter.pipe';
+import { RecentComponent } from './blog/recent/recent.component';
 
 
 
@@ -33,7 +34,8 @@ import { SearchFilterPipe } from '../search-filter.pipe';
     UserComponent,
     SearchFilterPipe,
     SafePipe,
-    UserComponent
+    UserComponent,
+    RecentComponent
   ],
   imports: [
     CommonModule,

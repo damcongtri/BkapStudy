@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/service/home.service';
 
-interface Searchpipe{
-  name:string;
-  description:string;
+interface Searchpipe {
+  name: string;
+  description: string;
 
 }
 @Component({
@@ -13,26 +13,28 @@ interface Searchpipe{
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
- 
-  constructor(private http : HttpClient, private  homeservice: HomeService) { }
-  user:any
-  keySearch: any ;
-  product:any;
+
+  constructor(private http: HttpClient, private homeservice: HomeService) { }
+  user: any
+  keySearch: any;
+  product: any;
 
   ngOnInit(): void {
-    this.user =  localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string ) : null;
-    this.homeservice.getCourseHome_Feautered().subscribe((data)=>{
+    this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null;
+    console.log(this.user);
+
+    this.homeservice.getCourseHome_Feautered().subscribe((data) => {
       this.product = data;
     })
   }
 
-  Logout(){
-      localStorage.removeItem('acc');
-      this.user =  localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string ) : null;
-      
+  Logout() {
+    localStorage.removeItem('acc');
+    this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null;
+
   }
 
-  
+
 
 
 
