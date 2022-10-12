@@ -20,6 +20,14 @@
     padding: 40px;
 }
 
+.left1 img {
+    max-height: 400px;
+    object-fit: cover;
+    /* object-position: topenter; */
+    /* object-position: top; */
+    object-position: 0px 20%;
+}
+
 .courseDetail .main .left2 {
     margin-top: 30px;
 }
