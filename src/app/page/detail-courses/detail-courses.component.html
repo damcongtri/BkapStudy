@@ -11,7 +11,7 @@
                         <div class="best-seller">
                             <h6 style="text-align: center; line-height: 40px;">BEST SELLER</h6>
                         </div>
-                        <h1 style="color: white; margin-top: 25px; margin-bottom: 25px;">KHÓA HỌC THỔI NẾN</h1>
+                        <h1 style="color: white; margin-top: 25px; margin-bottom: 25px;">{{course.name}}</h1>
                         <div class="rate-star">
                             <i style="color: yellow; " class="fa-solid fa-star"></i>
                             <i style="color: yellow; " class="fa-solid fa-star"></i>
@@ -26,7 +26,7 @@
             <div class="col-lg-4 col-md-4">
                 <div class="card right">
                     <div class="img-card-r">
-                        <iframe width="100%"  src="https://www.youtube.com/embed/zL1FRRyPsZs"
+                        <iframe width="100%" src="https://www.youtube.com/embed/zL1FRRyPsZs"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -34,13 +34,13 @@
                         <!-- <div class="play"><i class="fa-solid fa-play"></i></div> -->
                     </div>
                     <div class="text-card">
-                        <h1>$1500</h1>
+                        <h1>{{course.price}}</h1>
                         <button class="btn1">BUY NOW</button>
                         <button class="btn2">TRIAL LEARNING</button>
                         <h2>Course Information</h2>
                         <div class="text-ifo">
                             <i class="fa-regular fa-user"></i>
-                            <a>Instructor:<span> Vũ tắt nến</span></a>
+                            <a>Instructor:<span> {{course.author}}</span></a>
                         </div>
                         <div class="text-ifo">
                             <i class="fa-regular fa-note-sticky"></i>
