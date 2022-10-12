@@ -112,11 +112,7 @@
     },
     {
       "id": 7,
-<<<<<<< HEAD
-      "name": " Master of Computer Science in Data ScienceAI and Machine Learning",  
-=======
-      "name": " Master of Computer Science in Data Science",
->>>>>>> b17582c9c160fd25f2ce5172553d3a1dea06bebd
+      "name": " Master of Computer Science in Data ScienceAI and Machine Learning",
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 13,
@@ -313,31 +309,40 @@
       "confirmPassword": "1234567890",
       "id": 3,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
+    },
+    {
+      "name": "duy",
+      "email": "minhca123@gmail.com",
+      "password": "00000000",
+      "confirmPassword": "0000000",
+      "id": 4
+    },
+    {
+      "name": "Duy",
+      "email": "Duydz123@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 5
+    },
+    {
+      "name": "tri",
+      "email": "tri123@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "id": 6
+    },
+    {
+      "name": "minh",
+      "email": "minhdz123@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "id": 7
     }
   ],
   "cart": [
     {
-      "userId": 2,
-      "id": 1,
-      "name": " Master of Computer Science in Data ScienceAI and Machine Learning",
-      "author": "John Smith",
-      "description": "Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.",
-      "price": 1000,
-      "category_id": [
-        1
-      ],
-      "tag_id": [
-        1
-      ],
-      "status_id": 1,
-      "date": 2000,
-      "view": 2000,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
-      "status_1": true
-    },
-    {
-      "id": 2,
-      "name": " Master in website design and prototyping in sketch",
+      "id": 3,
+      "name": " Build responsive real world websites with HTML5 and CSS3",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
@@ -351,7 +356,26 @@
       "date": 2000,
       "view": 2000,
       "status_1": true,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
       "userId": 2
     }
   ],
@@ -560,12 +584,6 @@
       "id": 1,
       "courseId": 1,
       "content": "hello !"
-    },
-    {
-      "title": "hi chào cường cccokjcnaisiuhiu uiqhwui háidhasui",
-      "id": 3,
-      "courseId": "1",
-      "content": "c đánh giá rất cao về năng lực và trình độ của bé cường <3"
     }
   ]
 }

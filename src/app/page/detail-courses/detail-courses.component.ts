@@ -24,7 +24,6 @@ export class DetailCoursesComponent implements OnInit {
     data.userId = this.user.id;
     console.log(data);
     this.service.postCourseUser(data).subscribe(data => {
-
     })
   }
 

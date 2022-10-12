@@ -39,16 +39,25 @@ export class LoginComponent implements OnInit {
           email:data[0].email,
         }));
         this.Router.navigate(['/']);
+        localStorage.setItem('acc',JSON.stringify({
+          name:data[0].name,
+          image:data[0].image,
+          id:data[0].id,
+          email:data[0].email,
+        }));
       }
+      
       else {
-
+        
       }
 
      
       })
+      
      
       
     }
+    
   }
   eye1() {
     let ShowPass: any = document.getElementById('pwd') as HTMLLIElement
