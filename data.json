@@ -112,7 +112,11 @@
     },
     {
       "id": 7,
+<<<<<<< HEAD
       "name": " Master of Computer Science in Data ScienceAI and Machine Learning",  
+=======
+      "name": " Master of Computer Science in Data Science",
+>>>>>>> b17582c9c160fd25f2ce5172553d3a1dea06bebd
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 13,
@@ -330,6 +334,25 @@
       "view": 2000,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
       "status_1": true
+    },
+    {
+      "id": 2,
+      "name": " Master in website design and prototyping in sketch",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "userId": 2
     }
   ],
   "blogs": [
