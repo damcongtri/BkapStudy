@@ -47,7 +47,7 @@
                 data-bs-target="#noteModal">Note</a>
             <a href="#" class="list-group-item list-group-item-action btn-learning" data-bs-toggle="offcanvas"
                 href="#offcanvasExampleComment" role="button" aria-controls="offcanvasExampleComment">Q&A</a>
-            <a href="#" class="list-group-item list-group-item-action btn-learning">Exercise</a>
+            <a class="list-group-item list-group-item-action btn-learning">Exercise</a>
         </div>
         <div class="btn-control d-flex justify-content-center">
             <div class="btn-prev btn-control-item" (click)="prevLession()">
@@ -156,7 +156,7 @@
                             <form [formGroup]="formComment" (submit)="postComment()">
                                 <input class="form-control" type="text" placeholder="Comment here..."
                                     aria-label="readonly input example" formControlName="content">
-                                <div class="sendComment" (click)="postComment">
+                                <div class="sendComment" (click)="postComment()">
                                     <i class="fa-solid fa-paper-plane" *ngIf="formComment.value.content"></i>
                                 </div>
                             </form>
@@ -226,6 +226,35 @@
                 </div>
 
 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-buttom-a">
+    <div class="menu-buttom">
+        <div class="l-btn btn-control d-flex ">
+            <div class="btn-next btn-control-item" data-bs-toggle="modal" data-bs-target="#noteModal">
+                <span class="btn-bt1">Note</span>
+                <span class="btn-bt2"><i class="fa-regular fa-clipboard"></i></span>
+            </div>
+            <div class="btn-next btn-control-item" data-bs-toggle="offcanvas" href="#offcanvasExampleComment"
+                role="button" aria-controls="offcanvasExampleComment">
+                <span class="btn-bt1">Q&A</span>
+                <span class="btn-bt2"><i class="fa-regular fa-comments"></i></span>
+            </div>
+            <div class="btn-next btn-control-item">
+                <span class="btn-bt1">Exercise</span>
+                <span class="btn-bt2"><i class="fa-regular fa-circle-question"></i></span>
+            </div>
+        </div>
+        <div class="r-btn btn-control d-flex ">
+            <div class="btn-prev btn-control-item">
+                <span class="btn-bt1" (click)="prevLession()"><i class="fa-solid fa-chevron-left"></i> Prev</span>
+                <span class="btn-bt2" (click)="prevLession()"><i class="fa-solid fa-chevron-left"></i></span>
+            </div>
+            <div class="btn-next btn-control-item">
+                <span class="btn-bt1" (click)="nextLession()">Next <i class="fa-solid fa-chevron-right"></i></span>
+                <span class="btn-bt2" (click)="nextLession()"><i class=" fa-solid fa-chevron-right"></i></span>
             </div>
         </div>
     </div>

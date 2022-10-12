@@ -330,12 +330,38 @@
       "password": "11111",
       "confirmPassword": "11111",
       "id": 6
+    },
+    {
+      "name": "t",
+      "email": "t@123",
+      "password": "11111",
+      "confirmPassword": "11111",
+      "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
+      "id": 7
     }
   ],
   "cart": [
     {
-      "userId": 2,
-      "id": 1,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 7,
+      "courseId": 4,
+      "id": 1
+    },
+    {
       "name": " Learn IOS development, Website design, Freelancing",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
@@ -350,11 +376,13 @@
       "date": 2000,
       "view": 2000,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
-      "status_1": true
+      "status_1": true,
+      "userId": 7,
+      "courseId": 1,
+      "id": 2
     },
     {
-      "id": 2,
-      "name": " Master in website design and prototyping in sketch",
+      "name": " Build responsive real world websites with HTML5 and CSS3",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
@@ -368,8 +396,30 @@
       "date": 2000,
       "view": 2000,
       "status_1": true,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
-      "userId": 2
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 7,
+      "courseId": 3,
+      "id": 3
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 4,
+      "courseId": 1,
+      "id": 4
     }
   ],
   "blogs": [
@@ -534,20 +584,27 @@
         },
         {
           "id": 2,
-          "name": "content",
+          "name": "Thực chiến PHP",
           "lession": [
             {
               "id": 1,
-              "name": "Intro",
-              "desc": "",
-              "video": "",
+              "name": "xoa danh muc c1909g",
+              "desc": "xóa danh mục trong Php",
+              "video": "https://www.youtube.com/embed/2zrfiT0lZDg",
               "data": ""
             },
             {
               "id": 2,
-              "name": "set up environment",
+              "name": "sửa danh mục với php c1909g",
+              "desc": "Sửa danh mục trong Php",
+              "video": "https://www.youtube.com/embed/LZJX7zS3NPg",
+              "data": ""
+            },
+            {
+              "id": 3,
+              "name": "Ghép giao diện vào project php , upload file, thêm mới sản phẩm có ảnh",
               "desc": "",
-              "video": "",
+              "video": "https://www.youtube.com/embed/CEBa3_FxtLQ",
               "data": ""
             }
           ]

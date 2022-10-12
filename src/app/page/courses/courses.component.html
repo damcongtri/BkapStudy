@@ -16,7 +16,7 @@
         </div>
 
         <div class="course-group d-flex flex-wrap align-self-stretch">
-            <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6 col-12" routerLink="course/{{item.id}}"
+            <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6 col-12" routerLink="/vcourse/{{item.id}}"
                 *ngFor="let item of coursesList">
                 <div class="card card-course text-light" style="width: 100% !important; height: 100%;">
                     <img src="{{item.image}}" style="height: -webkit-fill-available;" class="card-img-top" alt="react">
@@ -24,8 +24,8 @@
                         <p class="card-text fs-6">{{item.name}}</p>
                         <div class="course-bottom d-flex justify-content-between align-items-center">
                             <div class="item-bottom ">
-                                <i class="fa-solid fa-users"></i>
-                                <span>{{item.view}}</span>
+                                <i class="fa-solid fa-users"> </i>
+                                <span> {{item.view}}</span>
                             </div>
                             <div class="item-bottom">
                                 <span>{{item.price}} <i class="fa-solid fa-dollar-sign"></i></span>

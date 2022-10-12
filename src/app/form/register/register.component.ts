@@ -45,7 +45,7 @@ export class RegisterComponent implements OnInit {
       this.formregister.patchValue({ image: 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg' })
       this.formservice.postUser(this.formregister.value).subscribe((data) => {
         if (data) {
-          this.Router.navigate(['/login'])
+          this.Router.navigate(['/user/login'])
         }
       })
     }
