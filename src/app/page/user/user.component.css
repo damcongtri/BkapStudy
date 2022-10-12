@@ -465,6 +465,9 @@ body {
 p {
     margin: 0;
 }
+.use-pd {
+    padding-left: 80px;
+}
 
 
 /* responsive */
@@ -493,6 +496,10 @@ p {
         width: 600px;
         height: auto;
     }
+    .use-pd {
+        padding-left: 10px !important;
+    }
+
 }
 
 @media screen and (max-width:768px) {

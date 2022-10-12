@@ -365,6 +365,30 @@
       "password": "123456789",
       "confirmPassword": "123456789",
       "id": 11
+    },
+    {
+      "name": "tri",
+      "email": "dasf@dsgfasf",
+      "password": "asdgasdfg",
+      "confirmPassword": "sdafdasf",
+      "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
+      "id": 12
+    },
+    {
+      "name": "tri",
+      "email": "dasf@dsgfasf",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
+      "id": 13
+    },
+    {
+      "name": "dfsaf",
+      "email": "fdsf@dgfdsg",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
+      "id": 14
     }
   ],
   "cart": [
@@ -404,6 +428,25 @@
       "view": 2000,
       "status_1": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 2
+    },
+    {
+      "id": 1,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
       "userId": 2
     }
   ],
@@ -612,6 +655,12 @@
       "id": 1,
       "courseId": 1,
       "content": "hello !"
+    },
+    {
+      "title": "hi",
+      "id": 2,
+      "courseId": "1",
+      "content": "ok"
     }
   ]
 }

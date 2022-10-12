@@ -37,11 +37,6 @@ export class HomeComponent implements OnInit {
     this.HomeService.getCourseHome_Student().subscribe((data) => {
       this.list_home4 = data;
     })
-
-
-
-
-
   }
 
 
