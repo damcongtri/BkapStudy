@@ -27,12 +27,13 @@ export class RegisterComponent implements OnInit {
     confirmPassword: new FormControl('', [
       Validators.required,
       Validators.minLength(5)
-    ])
+    ]),
+    image: new FormControl('')
   })
   constructor(private formservice: FormserviceService, private Router: Router) { }
-  id:any;
-  User:any=[];
-  
+  id: any;
+  User: any = [];
+
   ngOnInit(): void {
 
   }
@@ -41,10 +42,11 @@ export class RegisterComponent implements OnInit {
   }
   onSubmit() {
     if (!this.formregister.invalid) {
-      this.formservice.postUser(this.formregister.value).subscribe((data)=>{
-       if(data){
-        this.Router.navigate(['/login'])
-       }
+      this.formregister.patchValue({ image: 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg' })
+      this.formservice.postUser(this.formregister.value).subscribe((data) => {
+        if (data) {
+          this.Router.navigate(['/login'])
+        }
       })
     }
     else {
