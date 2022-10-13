@@ -8,7 +8,7 @@
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
-                <div class="logo">
+                <div class="logo" style="cursor: pointer;">
                     <img routerLink="/" src="assets/image/logo_sss.png" width="90px" alt="">
                 </div>
             </div>
@@ -22,13 +22,14 @@
                         <ul>
                             <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"
                                 *ngFor=" let items of product | search: keySearch ">
-                                <a href="" routerLink="/courses" style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
+                                <a href="" routerLink="/courses"
+                                    style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-                
+
+
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">
@@ -67,9 +68,9 @@
         style="width: 190px; background: #252841;">
         <div class="hidden-menu">
             <div class="icon-hidden-group">
-                <div  routerLink="/"class="icon-hidden-menu">
+                <div routerLink="/" class="icon-hidden-menu">
                     <i class="fa-solid fa-house"></i>
-                    <span  class="text-hidden-menu">Home</span>
+                    <span class="text-hidden-menu">Home</span>
                 </div>
                 <div routerLink="/courses" class="icon-hidden-menu">
                     <i class="fa-solid fa-book-open"></i>
@@ -80,16 +81,12 @@
                     <span class="text-hidden-menu">Learning</span>
                 </div>
                 <div routerLink="/user" class="icon-hidden-menu">
-                    <i class="fa-solid fa-display"></i>
-                    <span  class="text-hidden-menu">User</span>
+                    <i class="fa-solid fa-address-card"></i>
+                    <span class="text-hidden-menu">User</span>
                 </div>
                 <div class="icon-hidden-menu">
                     <i class="fa-solid fa-chart-pie"></i>
                     <span class="text-hidden-menu">Manage Course</span>
-                </div>
-                <div class="icon-hidden-menu">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span class="text-hidden-menu">Earning</span>
                 </div>
                 <div class="icon-hidden-menu">
                     <i class="fa-solid fa-newspaper"></i>
@@ -111,21 +108,17 @@
             <i class="fa-solid fa-house"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-house"></i>Home</div>
         </div>
-        <div class="icon icon-menu-hover" routerLink="/courses" >
+        <div class="icon icon-menu-hover" routerLink="/courses">
             <i class="fa-solid fa-book-open"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-book-open"></i>Courses </div>
         </div>
         <div routerLink="/user" class="icon icon-menu-hover">
-            <i class="fa-solid fa-display"></i>
-            <div class="menu-hover font-monospace"><i class="fa-solid fa-display"></i>User</div>
+            <i class="fa-solid fa-address-card"></i>
+            <div class="menu-hover font-monospace"><i class="fa-solid fa-address-card"></i>User</div>
         </div>
         <div routerLink="" class="icon icon-menu-hover">
             <i class="fa-solid fa-chart-pie"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-chart-pie"></i>Manage Course</div>
-        </div>
-        <div class="icon icon-menu-hover" routerLink="/learnings" >
-            <i class="fa-solid fa-address-card"></i>
-            <div class="menu-hover font-monospace"><i class="fa-solid fa-address-card"></i>Earning</div>
         </div>
         <div routerLink="/blogs" class="icon icon-menu-hover">
             <i class="fa-solid fa-newspaper"></i>

@@ -133,7 +133,7 @@
                     </li>
                     <li class="page-item" *ngFor="let item of number_page">
                         <button (click)="numPagee(item)" [class.active-tab-product]="numPage == item"
-                            class="page-link">1</button>
+                            class="page-link">{{item}}</button>
                     </li>
                     <li class="page-item"><button (click)="numPagee(numPage +1)"
                             [disabled]="numPage == number_page.slice(-1)"

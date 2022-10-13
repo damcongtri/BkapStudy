@@ -231,6 +231,25 @@
       "date": 2001,
       "view": 222,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-11.jpg"
+    },
+    {
+      "id": 13,
+      "name": " Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-11.jpg"
     }
   ],
   "Author": [
@@ -480,6 +499,23 @@
       "view": 6000,
       "status_4": "",
       "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
+    {
+      "id": 17,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
     }
   ],
   "user": [
@@ -637,7 +673,8 @@
       "title": "Rèn luyện tư duy và áp dụng kiến thức đã học vào thực hành",
       "user_id": 1,
       "content": "Mình có đọc qua vài bình luận ở dưới một số video trong khóa JS cơ bản và thấy một số bạn muốn có thêm bài tập thực hành (cụ thể là ...",
-      "id": 1
+      "id": 1,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/1021/6173be68944ad.jpg",
@@ -647,7 +684,8 @@
       "title": "Lập trình hướng đối tượng oop",
       "user_id": 2,
       "content": "Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo). Hy vọng",
-      "id": 2
+      "id": 2,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/707/6155ed6c19af9.png",
@@ -657,7 +695,8 @@
       "title": "GenZ theo ngành IT và suy nghĩ hơi hơi sai lệch 😗",
       "user_id": 3,
       "content": "Hi, lại là mình đây hehe. Hôm nay mình chia sẻ về những suy nghĩ sai của một người mới (cụ thể hơn là các bác sinh viên) tham gia...",
-      "id": 3
+      "id": 3,
+      "recent": true
     },
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/317/6141f41c37485.png",

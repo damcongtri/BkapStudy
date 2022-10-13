@@ -30,10 +30,14 @@ export class CoursesComponent implements OnInit {
       // console.log(this.courses);
     })
     this.service.getAllCourse().subscribe(data => {
-      console.log(data);
-      for (let i = 1; i <= Math.round(data.length / 12); i++) {
+      console.log(data.length);
+      // console.log(();
+
+      for (let i = 1; i <= ((Number(data.length) / 12) + 1); i++) {
         this.number_page.push(i)
       }
+      console.log(this.number_page);
+
       this.DataFilterCourses = data
     })
 
