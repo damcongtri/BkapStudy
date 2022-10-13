@@ -19,16 +19,21 @@ export class CoursesComponent implements OnInit {
   status: any
   listTag: any
   listCategories: any
+  check: boolean = true
+  number_page: any = []
   constructor(private service: CourseService) { }
 
   ngOnInit(): void {
+
     this.service.getPageCourse(this.numPage).subscribe(data => {
       this.coursesList = data
       // console.log(this.courses);
     })
     this.service.getAllCourse().subscribe(data => {
       console.log(data);
-
+      for (let i = 1; i <= Math.round(data.length / 12); i++) {
+        this.number_page.push(i)
+      }
       this.DataFilterCourses = data
     })
 
@@ -136,6 +141,7 @@ export class CoursesComponent implements OnInit {
   }
 
   filter() {
+    this.check = false
     alert('ok')
     console.log(this.DataFilterCourses);
 
@@ -153,5 +159,12 @@ export class CoursesComponent implements OnInit {
     // console.log(result);
 
     this.coursesList = result
+  }
+  clearFilter() {
+    this.check = true
+    this.service.getPageCourse(this.numPage).subscribe(data => {
+      this.coursesList = data
+      // console.log(this.courses);
+    })
   }
 }

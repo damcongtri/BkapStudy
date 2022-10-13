@@ -55,10 +55,14 @@ export class LearningComponent implements OnInit {
   })
 
   ngOnInit(): void {
+    const getApi = setInterval(
+      _ => {
+        this.getAllComment()
+      }, 5000)
+    if (this.formReply.value.content != '' || this.formComment.value.content != '') {
+      clearInterval(getApi)
+    }
 
-    setInterval(_ => {
-      this.getAllComment()
-    }, 2000)
     // console.log(this.formComment.value.reply[0].contentReply);
 
     this.dataUser = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null
@@ -157,8 +161,9 @@ export class LearningComponent implements OnInit {
 
     this.service.postNoteCourse(this.formCreate.value).subscribe(data => {
       console.log(data);
-      alert('done')
+      // alert('done')
       this.CheckFormCreate = true
+      this.formCreate.patchValue({ courseId: null, title: "", content: "" })
       this.getListNote()
     })
 
