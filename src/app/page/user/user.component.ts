@@ -6,7 +6,8 @@ import { CourseService } from 'src/app/service/course.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  listCourse: any
+  listCourse: any;
+  
   constructor(private service: CourseService) { }
   user: any;
   ngOnInit(): void {
