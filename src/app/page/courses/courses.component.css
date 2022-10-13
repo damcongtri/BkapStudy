@@ -28,6 +28,20 @@
     letter-spacing: 0.6px;
 }
 
+.filter-course:first-child {
+    background-color: #323653 !important;
+}
+
+.filter-course:first-child:hover {
+    background-color: #AB75F0 !important;
+    color: #fff !important;
+}
+
+.filter-course:last-child:hover {
+    opacity: 0.9;
+    background-color: #AB75F0 !important;
+    color: #fff !important;
+}
 
 /* filter */
 .filter-course {
