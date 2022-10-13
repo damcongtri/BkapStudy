@@ -606,6 +606,27 @@
       "userId": 4,
       "courseId": 1,
       "id": 4
+    },
+    {
+      "name": " Master in website design and prototyping in sketch",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 400,
+      "category_id": [
+        1,
+        2
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2004,
+      "view": 200,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "userId": 4,
+      "courseId": 2,
+      "id": 5
     }
   ],
   "blogs": [

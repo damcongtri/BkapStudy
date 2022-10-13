@@ -25,7 +25,8 @@
         <div class="course-group d-flex flex-wrap align-self-stretch">
             <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6 col-12" routerLink="/vcourse/{{item.id}}"
                 *ngFor="let item of coursesList">
-                <div class="card card-course text-light" style="width: 100% !important; height: 100%;">
+                <div class="card card-course text-light" style="width: 100% !important; height: 100%;"
+                    routerLink="/course/{{item.id}}">
                     <img src="{{item.image}}" style="height: -webkit-fill-available;" class="card-img-top" alt="react">
                     <div class="card-body">
                         <p class="card-text fs-6">{{item.name}}</p>
