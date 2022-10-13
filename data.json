@@ -7,14 +7,16 @@
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
       "category_id": [
-        1
+        1,
+        5
       ],
       "tag_id": [
-        1
+        1,
+        2
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2020,
+      "view": 1000,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
       "status_1": true
     },
@@ -23,16 +25,17 @@
       "name": " Master in website design and prototyping in sketch",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
-      "price": 1000,
+      "price": 400,
       "category_id": [
-        1
+        1,
+        2
       ],
       "tag_id": [
         1
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2004,
+      "view": 200,
       "status_1": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg"
     },
@@ -41,9 +44,10 @@
       "name": " Build responsive real world websites with HTML5 and CSS3",
       "author": "John Smith",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
-      "price": 1000,
+      "price": 5000,
       "category_id": [
-        1
+        1,
+        4
       ],
       "tag_id": [
         1
@@ -99,10 +103,13 @@
       "majob_1": "Developent",
       "majob_2": "Javascript",
       "category_id": [
-        1
+        1,
+        3
       ],
       "tag_id": [
-        1
+        1,
+        2,
+        3
       ],
       "status_id": 1,
       "date": 2000,
@@ -119,7 +126,7 @@
       "majob_1": "Developent",
       "majob_2": "Javascript",
       "category_id": [
-        1
+        4
       ],
       "tag_id": [
         1
@@ -128,6 +135,25 @@
       "date": 2000,
       "view": 2000,
       "status_2": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+    },
+    {
+      "id": 8,
+      "name": " Master of Computer Science in Data ScienceAI and Machine Learning",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
     }
   ],
@@ -141,7 +167,7 @@
       "majob_1": "Developent",
       "majob_2": "Javascript",
       "category_id": [
-        1
+        3
       ],
       "tag_id": [
         2,
@@ -160,7 +186,7 @@
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
       "category_id": [
-        1
+        2
       ],
       "tag_id": [
         1
@@ -196,10 +222,11 @@
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 1000,
       "category_id": [
-        1
+        4,
+        2
       ],
       "tag_id": [
-        1
+        3
       ],
       "status_id": 1,
       "date": 2000,
@@ -213,10 +240,10 @@
       "author": "Chalvet Berthely",
       "price": 1000,
       "category_id": [
-        1
+        2
       ],
       "tag_id": [
-        1
+        2
       ],
       "status_id": 1,
       "date": 2000,
@@ -230,14 +257,15 @@
       "author": "Minh ca",
       "price": 1000,
       "category_id": [
-        1
+        3,
+        4
       ],
       "tag_id": [
         1
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2003,
+      "view": 1234,
       "status_4": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
@@ -253,8 +281,8 @@
         1
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2010,
+      "view": 1000,
       "status_4": "",
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
@@ -262,7 +290,7 @@
       "id": 15,
       "name": " learn json-server",
       "author": "Minh ca",
-      "price": 1000,
+      "price": 6000,
       "category_id": [
         1
       ],
@@ -270,8 +298,8 @@
         1
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2020,
+      "view": 2030,
       "status_4": "",
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-8.jpg"
     },
@@ -279,7 +307,7 @@
       "id": 16,
       "name": " learn json-server",
       "author": "Minh ca",
-      "price": 1000,
+      "price": 4000,
       "category_id": [
         1
       ],
@@ -287,11 +315,96 @@
         1
       ],
       "status_id": 1,
-      "date": 2000,
-      "view": 2000,
+      "date": 2020,
+      "view": 6000,
       "status_4": "",
       "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
-    }
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
+    {
+      "id": 16,
+      "name": " learn json-server",
+      "author": "Minh ca",
+      "price": 4000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 6000,
+      "status_4": "",
+      "image": "https://cf.shopee.vn/file/4f27ac55915d0cdbbb620a8af2f2ee6d_xxhdpi"
+    },
   ],
   "user": [
     {

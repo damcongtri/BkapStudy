@@ -134,7 +134,9 @@
                         <button (click)="numPagee(item)" [class.active-tab-product]="numPage == item"
                             class="page-link">1</button>
                     </li>
-                    <li class="page-item"><button (click)="numPagee(numPage +1)" class="page-link">Next</button></li>
+                    <li class="page-item"><button (click)="numPagee(numPage +1)"
+                            [disabled]="numPage == number_page.slice(-1)"
+                            [class.disabled]="numPage == number_page.slice(-1)" class="page-link">Next</button></li>
                 </ul>
             </nav>
         </div>
