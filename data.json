@@ -135,7 +135,7 @@
       "date": 2000,
       "view": 2000,
       "status_2": true,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-14.jpg"
     },
     {
       "id": 8,
@@ -155,7 +155,84 @@
       "date": 2001,
       "view": 222,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+    },
+    {
+      "id": 9,
+      "name": " Master of Business Administration (iMBA)",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-19.jpg"
+    },
+    {
+      "id": 10,
+      "name": " Machine Learning A-Z™: Hands-On Python & R In Data Science",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-18.jpg"
+    },
+    {
+      "id": 11,
+      "name": " The Web Developer Bootcamp and Learning",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-12.jpg"
+    },
+    {
+      "id": 12,
+      "name": " Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-11.jpg"
     }
+    
   ],
   "Author": [
     {
@@ -528,7 +605,256 @@
       "id": 17
     }
   ],
+<<<<<<< HEAD
   "cart": [],
+=======
+  "cart": [
+    {
+      "id": 3,
+      "name": " Build responsive real world websites with HTML5 and CSS3",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 2
+    },
+    {
+      "id": 1,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 7,
+      "courseId": 4
+    },
+    {
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 7,
+      "courseId": 1
+    },
+    {
+      "name": " Build responsive real world websites with HTML5 and CSS3",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 7,
+      "courseId": 3,
+      "id": 3
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 4,
+      "courseId": 1,
+      "id": 4
+    },
+    {
+      "name": " Master in website design and prototyping in sketch",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "userId": 2,
+      "courseId": 2,
+      "id": 5
+    },
+    {
+      "name": " Build responsive real world websites with HTML5 and CSS3",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-6.jpg",
+      "userId": 2,
+      "courseId": 3,
+      "id": 6
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 2,
+      "courseId": 4,
+      "id": 7
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 2,
+      "courseId": 1,
+      "id": 8
+    },
+    {
+      "name": " Software Engineering MasterTrack® Certificate",
+      "author": "John Smith",
+      "price": 100,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2012,
+      "view": 2000,
+      "status_2": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-1.jpg",
+      "userId": 2,
+      "courseId": 5,
+      "id": 9
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2000,
+      "view": 2000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 15,
+      "courseId": 1,
+      "id": 10
+    },
+    {
+      "name": " Software Engineering MasterTrack® Certificate",
+      "author": "Laura",
+      "price": 100,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2012,
+      "view": 2000,
+      "status_2": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-1.jpg",
+      "userId": 17,
+      "courseId": 5,
+      "id": 11
+    }
+  ],
+>>>>>>> 38d57d6daf6cf211135e6e9185c4eade2a737d23
   "blogs": [
     {
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/3370/626fc1a91b92a.png",
