@@ -135,7 +135,7 @@
       "date": 2000,
       "view": 2000,
       "status_2": true,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-14.jpg"
     },
     {
       "id": 8,
@@ -155,7 +155,84 @@
       "date": 2001,
       "view": 222,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
+    },
+    {
+      "id": 9,
+      "name": " Master of Business Administration (iMBA)",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-19.jpg"
+    },
+    {
+      "id": 10,
+      "name": " Machine Learning A-Z™: Hands-On Python & R In Data Science",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-18.jpg"
+    },
+    {
+      "id": 11,
+      "name": " The Web Developer Bootcamp and Learning",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-12.jpg"
+    },
+    {
+      "id": 12,
+      "name": " Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-11.jpg"
     }
+    
   ],
   "Author": [
     {
@@ -751,6 +828,27 @@
       "userId": 15,
       "courseId": 1,
       "id": 10
+    },
+    {
+      "name": " Software Engineering MasterTrack® Certificate",
+      "author": "Laura",
+      "price": 100,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2012,
+      "view": 2000,
+      "status_2": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-1.jpg",
+      "userId": 17,
+      "courseId": 5,
+      "id": 11
     }
   ],
   "blogs": [
