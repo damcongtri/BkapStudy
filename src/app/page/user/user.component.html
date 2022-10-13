@@ -18,12 +18,13 @@
                         <div class="left">
                             <div class="introduce-active ">
                                 <p class="name_cou" style="color: #B16AFC;">Introduce</p>
-                                <p> <i class="fa-solid fa-users"></i> Member of BKAP - Learn to program to work from 8 months
+                                <p> <i class="fa-solid fa-users"></i> Member of BKAP - Learn to program to work from 8
+                                    months
                                     before
- </p>
+                                </p>
                             </div>
                             <div class="introduce-active mt-5">
-                                <p class="name_cou "  style="color: #B16AFC;" >Recent Activity </p>
+                                <p class="name_cou " style="color: #B16AFC;">Recent Activity </p>
                                 <p>Not Activity</p>
                             </div>
                         </div>
@@ -33,12 +34,13 @@
                         <div class="right">
                             <div class="information-course">
                                 <div class="text">
-                                    <p class="name_cou"   style="color: #B16AFC;">Các khóa học đã tham gia</p>
+                                    <p class="name_cou" style="color: #B16AFC;">Các khóa học đã tham gia</p>
                                 </div>
                                 <div class="div">
                                     <div class="content-course d-flex align-items-center "
-                                        *ngFor="let item of listCourse">
-                                        <a href="" class="p-4 a-img"> <img src="{{item.image}}"
+                                        *ngFor="let item of listCourse" routerLink="/course/{{item.courseId}}"
+                                        style="cursor: pointer;">
+                                        <a class="p-4 a-img"> <img src="{{item.image}}"
                                                 class="figure-img img-fluid  infor-img " alt="..."></a>
                                         <div class="text-infor">
                                             <p class="i">{{item.name}} </p>
