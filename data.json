@@ -74,7 +74,7 @@
     },
     {
       "id": 5,
-      "name": " Software Engineering MasterTrack® Certificate",
+      "name": " Master of Computer Science in Data Science Certificate Learning",
       "author": "John Smith",
       "price": 100,
       "majob_1": "Developent",
@@ -112,7 +112,7 @@
     },
     {
       "id": 7,
-      "name": " Master of Computer Science in Data Science",  
+      "name": " Master of Computer Science in Data Science Certificate",
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 13,
@@ -129,7 +129,6 @@
       "view": 2000,
       "status_2": true,
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg"
-
     }
   ],
   "Author": [
@@ -256,7 +255,7 @@
       "status_id": 1,
       "date": 2000,
       "view": 2000,
-      "status_4": true,
+      "status_4": "",
       "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/author-9.jpg"
     },
     {
