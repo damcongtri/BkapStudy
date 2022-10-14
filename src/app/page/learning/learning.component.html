@@ -1,7 +1,6 @@
 <div class="learning d-flex" style="padding-left: 80px; padding-top:80px">
     <div class="course-material col-lg-9 col-md-9 col-sm-12 col-12">
-        <div class="video-lesson w-100"
-            style="height: 45vw; min-height: 45vw !important; max-height: 88vh; width: 100%; padding: 3%; background-color: #252841;">
+        <div class="video-lesson w-100" id="video" style="width: 100%; padding: 3%; background-color: #252841;">
             <iframe width="100%" height="100%" [src]="lessonData.video | safe" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -46,8 +45,9 @@
             <a href="#" class="list-group-item list-group-item-action btn-learning">Course Material</a>
             <a href="#" class="list-group-item list-group-item-action btn-learning" data-bs-toggle="modal"
                 data-bs-target="#noteModal">Note</a>
-            <a href="#" class="list-group-item list-group-item-action btn-learning">Q&A</a>
-            <a href="#" class="list-group-item list-group-item-action btn-learning">Exercise</a>
+            <a href="#" class="list-group-item list-group-item-action btn-learning" data-bs-toggle="offcanvas"
+                href="#offcanvasExampleComment" role="button" aria-controls="offcanvasExampleComment">Q&A</a>
+            <a class="list-group-item list-group-item-action btn-learning">Exercise</a>
         </div>
         <div class="btn-control d-flex justify-content-center">
             <div class="btn-prev btn-control-item" (click)="prevLession()">
@@ -68,61 +68,193 @@
             <div class="modal-content">
                 <div class="modal-header border-modal">
                     <button type="button" class="btn btn-primary mb-3"
-                        style="background-color: blueviolet !important; border: none;">New</button>
+                        style="background-color: blueviolet !important; border: none;"
+                        (click)="CheckFormCreate = true">New</button>
                     <h5 class="modal-title" id="exampleModalLabel">Note</h5>
                     <button type="button" class="btn text-light" data-bs-dismiss="modal" aria-label="Close"><i
                             class="fa-solid fa-x"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="note-course d-flex flex-wrap">
-                        <div class="note-item col-lg-9 col-md-12 col-sm-12 col-12 p-2">
-
-                            <div class="form-floating ">
-                                <textarea class="form-control form-new" placeholder="Leave a comment here"
-                                    id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Title</label>
-                            </div>
-                            <div class="form-floating ">
-                                <textarea class="form-control form-new" placeholder="Leave a comment here"
-                                    id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Comments</label>
-                            </div>
-                            <div style="text-align: right;">
-                                <button type="button" class="btn btn-primary mt-3"
-                                    style="background-color: blueviolet !important; border: none; text-align: right;">Create</button>
-                            </div>
+                        <div class="note-item col-lg-9 col-md-12 col-sm-12 col-12 p-2" *ngIf="CheckFormCreate">
+                            <form [formGroup]="formCreate">
+                                <div class="form-floating ">
+                                    <textarea class="form-control form-new" placeholder="Leave a comment here"
+                                        id="floatingTextarea" formControlName="title"></textarea>
+                                    <label for="floatingTextarea">Title</label>
+                                </div>
+                                <div class="form-floating ">
+                                    <textarea class="form-control form-new" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 180px"
+                                        formControlName="content"></textarea>
+                                    <label for="floatingTextarea2">Content</label>
+                                </div>
+                                <div style="text-align: right;">
+                                    <button type="button" class="btn btn-primary mt-3"
+                                        style="background-color: blueviolet !important; border: none; text-align: right;"
+                                        (click)="postNote()">Create</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="note-item col-lg-9 col-md-12 col-sm-12 col-12 p-2" *ngIf="!CheckFormCreate">
+                            <form [formGroup]="formEdit">
+                                <div class="form-floating ">
+                                    <textarea class="form-control form-new" placeholder="Leave a comment here"
+                                        id="floatingTextarea" formControlName="title"></textarea>
+                                    <label for="floatingTextarea">Title</label>
+                                </div>
+                                <div class="form-floating ">
+                                    <textarea formControlName="content" class="form-control form-new"
+                                        placeholder="Leave a comment here" id="floatingTextarea2"
+                                        style="height: 180px"></textarea>
+                                    <label for="floatingTextarea2">Content</label>
+                                </div>
+                                <div style="text-align: right;">
+                                    <button type="button" class="btn btn-primary mt-3"
+                                        style="background-color: cadetblue !important; border: none; text-align: right;"
+                                        (click)="putNote()">Update</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="note-item col-lg-3 col-md-12 col-sm-12 col-12">
                             <h6>Previous Notes</h6>
                             <div class="list-note">
                                 <ol class="list-group list-group-numbered overflow-auto" style="height: 300px;">
 
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
-                                    <li class="list-group-item">A list item</li>
+                                    <li *ngFor="let item of listNote" class="list-group-item"
+                                        (click)="editNote(item.id)">
+                                        <span>{{item.title}}</span> <span class="btnDelete"
+                                            (click)="deleteNote(item.id)"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-modal">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" style="background-color: #ab75f0;">Save
-                        changes</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- comment modal -->
+
+    <div class="offcanvas offcanvas-end comment_course" tabindex="-1" id="offcanvasExampleComment"
+        aria-labelledby="offcanvasExampleCommentLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleCommentLabel">Q&A</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="comment">
+
+
+                <div class="comment_form d-flex align-items-center ">
+                    <div class=" comment_form-avatar">
+                        <img class="card-img" src="{{dataUser.image}}" alt="">
+                    </div>
+                    <div class="comment_form-content w-100 p-3">
+                        <div class="comment_ipComment position-relative">
+                            <form [formGroup]="formComment" (submit)="postComment()">
+                                <input class="form-control" type="text" placeholder="Comment here..."
+                                    aria-label="readonly input example" formControlName="content">
+                                <div class="sendComment" (click)="postComment()">
+                                    <i class="fa-solid fa-paper-plane" *ngIf="formComment.value.content"></i>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
+                <div class="comments_show overflow-auto" style="max-height: 100vh;">
+
+                    <div class="comment_show-item d-flex p-3" *ngFor="let item of listComment">
+                        <div class=" comment_form-avatar">
+                            <img class="card-img" src="{{item.avatar}}" alt="">
+                        </div>
+                        <div class="comment_show-content w-100 ps-3">
+                            <div class="comment_show-content--user d-flex align-items-center">
+                                <div class="user_name pe-4">{{item.userName}}</div>
+                                <div class="user_date">2 munites ago</div>
+                            </div>
+                            <div class="comments_show-item--content">
+                                {{item.content}}
+                            </div>
+                            <div class="comment_show-item--reply d-flex mt-3">
+
+                                <form (ngSubmit)="putComment(item.id)" [formGroup]="formReply"
+                                    class="comment_show-item--ip w-100 align-items-center "
+                                    *ngIf="CheckReply == item.id" id="ip-reply">
+                                    <!-- <form [formGroup]="formReply"> -->
+                                    <input id="repChild" formControlName="content" type="text"
+                                        placeholder="comment here..." class="w-100 m-0" id="ip">
+                                    <!-- </form> -->
+                                </form>
+
+                                <div class="comment_show-item--btn " (click)="putComment(item.id)">
+                                    Reply
+                                </div>
+
+                                <a class="comment_show-item--close m-0 d-flex align-items-center">
+                                    <div id="close" *ngIf="CheckReply == item.id" (click)="CheckReply= null">
+                                        <i class=" fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="reply">
+                                <div class="comment_show-item d-flex p-3" style="border: none !important;"
+                                    *ngFor="let itemRep of item.reply; let i =index">
+                                    <div class=" comment_form-avatar">
+                                        <img class="card-img" src="{{itemRep.avatar}}" alt="">
+                                    </div>
+                                    <div class="comment_show-content w-100 ps-3">
+                                        <div class="comment_show-content--user d-flex align-items-center">
+                                            <div class="user_name pe-4">{{itemRep.userName}}</div>
+                                            <div class="user_date">2 munites ago</div>
+                                        </div>
+                                        <div class="comments_show-item--content">
+                                            {{itemRep.content}}
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-buttom-a">
+    <div class="menu-buttom">
+        <div class="l-btn btn-control d-flex ">
+            <div class="btn-next btn-control-item" data-bs-toggle="modal" data-bs-target="#noteModal">
+                <span class="btn-bt1">Note</span>
+                <span class="btn-bt2"><i class="fa-regular fa-clipboard"></i></span>
+            </div>
+            <div class="btn-next btn-control-item" data-bs-toggle="offcanvas" href="#offcanvasExampleComment"
+                role="button" aria-controls="offcanvasExampleComment">
+                <span class="btn-bt1">Q&A</span>
+                <span class="btn-bt2"><i class="fa-regular fa-comments"></i></span>
+            </div>
+            <div class="btn-next btn-control-item">
+                <span class="btn-bt1">Exercise</span>
+                <span class="btn-bt2"><i class="fa-regular fa-circle-question"></i></span>
+            </div>
+        </div>
+        <div class="r-btn btn-control d-flex ">
+            <div class="btn-prev btn-control-item">
+                <span class="btn-bt1" (click)="prevLession()"><i class="fa-solid fa-chevron-left"></i> Prev</span>
+                <span class="btn-bt2" (click)="prevLession()"><i class="fa-solid fa-chevron-left"></i></span>
+            </div>
+            <div class="btn-next btn-control-item">
+                <span class="btn-bt1" (click)="nextLession()">Next <i class="fa-solid fa-chevron-right"></i></span>
+                <span class="btn-bt2" (click)="nextLession()"><i class=" fa-solid fa-chevron-right"></i></span>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
-                <div class="logo">
+                <div class="logo" style="cursor: pointer;">
                     <img routerLink="/" src="assets/image/logo_sss.png" width="90px" alt="">
                 </div>
             </div>
@@ -17,20 +17,19 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input [(ngModel)]="keySearch" placeholder="Search courses, articles, videos,..." type="text">
                 <div class="showFilterSearch" *ngIf="keySearch">
-                    <div style="margin-top: 400px;transform: translateX(-50%); width: 100%; background-color: #252841;"
+                    <div style="margin-top: 235px;transform: translateX(-50%); width: 100%; background-color: #252841;"
                         class="scrollbar">
                         <ul>
                             <li style="width: 500px; max-width: 100%; list-style: none;  " class=" searchs p-2"
                                 *ngFor=" let items of product | search: keySearch ">
-                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
-                            </li>
-                            <li style="width: 500px;  max-width: 100%; list-style: none;" class=" searchs p-2"
-                                *ngFor=" let items of product | search: keySearch ">
-                                <a href="" style="text-decoration: none; color:#999ebe;">{{items.author}}</a>
+                                <a href="" routerLink="/courses"
+                                    style="text-decoration: none; color:#999ebe;">{{items.name}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+
             </div>
             <div style="display: flex; align-items: center;">
                 <div class="search-mobile">
@@ -68,6 +67,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
         style="width: 190px; background: #252841;">
         <div class="hidden-menu">
+            
             <div class="icon-hidden-group">
                 <div class="icon-hidden-menu" routerLink="/">
                     <i class="fa-solid fa-house"></i>
@@ -79,19 +79,15 @@
                 </div>
                 <div class="icon-hidden-menu">
                     <i class="fa-regular fa-clipboard"></i>
-                    <span class="text-hidden-menu">Category</span>
+                    <span class="text-hidden-menu">Learning</span>
                 </div>
-                <div class="icon-hidden-menu">
-                    <i class="fa-solid fa-display"></i>
-                    <span class="text-hidden-menu">Dashboard</span>
+                <div routerLink="/user" class="icon-hidden-menu">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span class="text-hidden-menu">User</span>
                 </div>
                 <div class="icon-hidden-menu">
                     <i class="fa-solid fa-chart-pie"></i>
                     <span class="text-hidden-menu">Manage Course</span>
-                </div>
-                <div class="icon-hidden-menu">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span class="text-hidden-menu">Earning</span>
                 </div>
                 <div class="icon-hidden-menu">
                     <i class="fa-solid fa-newspaper"></i>
@@ -117,23 +113,15 @@
             <i class="fa-solid fa-book-open"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-book-open"></i>Courses </div>
         </div>
-        <div class="icon icon-menu-hover">
-            <i class="fa-regular fa-clipboard"></i>
-            <div class="menu-hover font-monospace"><i class="fa-regular fa-clipboard"></i>Category</div>
+        <div routerLink="/user" class="icon icon-menu-hover">
+            <i class="fa-solid fa-address-card"></i>
+            <div class="menu-hover font-monospace"><i class="fa-solid fa-address-card"></i>User</div>
         </div>
-        <div class="icon icon-menu-hover">
-            <i class="fa-solid fa-display"></i>
-            <div class="menu-hover font-monospace"><i class="fa-solid fa-display"></i>Dashboard</div>
-        </div>
-        <div class="icon icon-menu-hover">
+        <div routerLink="" class="icon icon-menu-hover">
             <i class="fa-solid fa-chart-pie"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-chart-pie"></i>Manage Course</div>
         </div>
-        <div class="icon icon-menu-hover">
-            <i class="fa-solid fa-address-card"></i>
-            <div class="menu-hover font-monospace"><i class="fa-solid fa-address-card"></i>Earning</div>
-        </div>
-        <div class="icon icon-menu-hover" routerLink="/blogs">
+        <div routerLink="/blogs" class="icon icon-menu-hover">
             <i class="fa-solid fa-newspaper"></i>
             <div class="menu-hover font-monospace"><i class="fa-solid fa-newspaper"></i>Blogs</div>
         </div>

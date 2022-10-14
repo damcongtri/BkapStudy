@@ -10,15 +10,12 @@ import { DetailBlogComponent } from './detail-blog/detail-blog.component';
 import { LearningComponent } from './learning/learning.component';
 import { CoursesComponent } from './courses/courses.component';
 import { DetailCoursesComponent } from './detail-courses/detail-courses.component';
-import { MaterialComponent } from './learning/material/material.component';
-import { NoteComponent } from './learning/note/note.component';
-import { QAComponent } from './learning/q-a/q-a.component';
-import { ExerciseComponent } from './learning/exercise/exercise.component';
 import { SafePipe } from '../safe.pipe';
 import { UserComponent } from './user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchFilterPipe } from '../search-filter.pipe';
+import { RecentComponent } from './blog/recent/recent.component';
 
 
 
@@ -33,14 +30,12 @@ import { SearchFilterPipe } from '../search-filter.pipe';
     LearningComponent,
     CoursesComponent,
     DetailCoursesComponent,
-    MaterialComponent,
-    NoteComponent,
-    QAComponent,
-    ExerciseComponent,
+
     UserComponent,
     SearchFilterPipe,
     SafePipe,
-    UserComponent
+    UserComponent,
+    RecentComponent
   ],
   imports: [
     CommonModule,

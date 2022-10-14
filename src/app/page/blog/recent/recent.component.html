@@ -1,0 +1,26 @@
+<div class="" id="blogs" style="right:0;">
+    <h2 class="title_ ">Recent Blogs</h2>
+    <div class="blog1" *ngFor="let item of list_recent">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-xs-3">
+                <div class="image_blog">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0414/0069/6999/files/instagram3.jpg?v=1233786014105632074"
+                        height="100%" class="card-img" alt=""> -->
+                    <img width="100%" src="{{item.image}}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-9 p col-md-9 col-sm-9 col-9">
+                <div class="content_blog ">
+                    <div class="title_blog" style="cursor: pointer;" routerLink="/blog/{{item.id}}">
+                        <h6>{{item.title}}
+                        </h6>
+                    </div>
+                    <div class="describe">
+                        <p class="m-0">By: {{item.author}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <h2 class="title_ pr-3">Recent Blogs</h2> -->
+</div>

@@ -83,43 +83,43 @@
             <div class="content">
               <div class="content-categories pt-3 pb-3">
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1 flex-wrap"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1 flex-wrap"> <i
                       class="fa-solid fa-code me-3"></i>
                     <p>Developent</p>
                   </a>
                 </div>
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1 flex-wrap"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1 flex-wrap"> <i
                       class="fa-solid fa-landmark me-3"></i>
                     <p>Business</p>
                   </a>
                 </div>
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1"> <i
                       class="fa-solid fa-bullhorn me-3"></i>
                     <p>Marketing</p>
                   </a>
                 </div>
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1"> <i
                       class="fa-solid fa-computer me-3"></i>
                     <p>IT and Software</p>
                   </a>
                 </div>
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1"> <i
                       class="fa-solid fa-image me-3"></i>
                     <p>Photography</p>
                   </a>
                 </div>
                 <div class="item-category d-flex align-items-center p-1 mb-1">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1"> <i
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1"> <i
                       class="fa-solid fa-box-archive me-3"></i>
                     <p>UX Design</p>
                   </a>
                 </div>
                 <div class="all-category">
-                  <a href="" class="item-category d-flex align-items-center p-1 mb-1">View All Categories
+                  <a href=""  routerLink="/courses"class="item-category d-flex align-items-center p-1 mb-1">View All Categories
                   </a>
                 </div>
               </div>
@@ -134,7 +134,7 @@
             <div class="faetured-course">
               <div class="course-text d-flex justify-content-between align-items-center">
                 <p>Featured Course</p>
-                <a href="">
+                <a href=""  routerLink="/courses">
                   <p class="see-all">See all</p>
                 </a>
               </div>
@@ -147,7 +147,7 @@
                           <a href=""><img src="{{item.image}}" class="flex-shrink-0 me-3 course-img" alt="..."></a>
                         </div>
                         <div class="text-course col-12 col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                          <h5 class="mt-0 name">{{item.name}}</h5>
+                          <h5 class="mt-0 name" routerLink="/course/{{item.id}}">{{item.name}}</h5>
                           <p class="">{{item.description}}</p>
                           <p class="author">By: <span class="author-color">{{item.author}}</span> </p>
 
@@ -176,7 +176,7 @@
             <div class="latest-course">
               <div class="text d-flex justify-content-between align-items-center">
                 <p>Latest Course</p>
-                <a href="">
+                <a href=""  routerLink="/courses">
                   <p class="see-all">See all</p>
                 </a>
               </div>
@@ -187,7 +187,7 @@
                       <div class="card background ">
                         <a href=""> <img src="{{item.image}}" class="card-img-top img-latest" alt="..."></a>
                         <div class="text-item">
-                          <h5 class="">{{item.name}}</h5>
+                          <h5 class="" routerLink="/course/{{item.id}}">{{item.name}}</h5>
                           <div class="card-title d-flex flex-wrap">
                             <p>{{item.majob_1}}</p>
                             <p class="margin">|</p>
@@ -211,7 +211,7 @@
               <div class="popular-instructors">
                 <div class="text d-flex justify-content-between align-items-center">
                   <p>Popular Instructors</p>
-                  <a href="">
+                  <a href=""  routerLink="/courses">
                     <p class="see-all">See all</p>
                   </a>
                 </div>
@@ -246,42 +246,40 @@
                 </div>
               </div>
 
+              <!-- What our students say -->
+              <div class="student-say">
+                <div class="text d-flex justify-content-between align-items-center">
+                  <p>What our students say</p>
+                  <a href="" routerLink="/courses" >
+                    <p class="see-all">See all</p>
+                  </a>
+                </div>
+                <div class="content-student">
+                  <div class="row">
+                    <div class="col-lg-6" *ngFor="let item of list_home4">
+                      <div class="card mb-3 background-student">
+                        <div class="carousel-content">
+                          <img src="{{item.image}} " class="card-img-top img-student" alt="...">
 
-                    
-                    <!-- What our students say -->
-                    <div class="student-say">
-                      <div class="text d-flex justify-content-between align-items-center">
-                        <p>What our students say</p>
-                        <a href="">
-                          <p class="see-all">See all</p>
-                        </a>
-                      </div>
-                      <div class="content-student">
-                        <div class="row">
-                          <div class="col-lg-6" *ngFor="let item of list_home4">
-                            <div class="card mb-3 background-student">
-                              <div class="carousel-content">
-                                <img src="{{item.image}} " class="card-img-top img-student" alt="...">
-
-                                <div class="content-student">
-                                  <div class="title">
-                                    <p class="author">{{item.author}}</p>
-                                    <p class="name">Student</p>
-                                    <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                      sed
-                                      do
-                                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                      veniam.
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
+                          <div class="content-student">
+                            <div class="title">
+                              <p class="author">{{item.author}}</p>
+                              <p class="name">Student</p>
+                              <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.
+                              </p>
                             </div>
                           </div>
                         </div>
-
-
                       </div>
                     </div>
                   </div>
+
+
                 </div>
+              </div>
+            </div>
+          </div>

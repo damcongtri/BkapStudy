@@ -1,71 +1,60 @@
-
-  <main>
+<main>
     <div class="user ">
-        <div class="banner-user container">
-            <img src="https://media.istockphoto.com/vectors/hacker-vector-trendy-banner-vector-id689595010?k=20&m=689595010&s=170667a&w=0&h=n105hPzjR2a4BuaSh7oI4BuyZE03JegDU0_RPm83eWU=" class=" item-banner img-fluid " alt="">
+        <div class="banner-user">
+            <div class="image-banner-group">
+                <img src="https://images.pexels.com/photos/9969147/pexels-photo-9969147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class=" item-banner img-fluid " alt="">
+            </div>
             <div class="user-img-name d-flex">
                 <img src="{{user.image}}" alt="" class=" img-thumbnail">
                 <p>{{user.name}}</p>
             </div>
-        
+
         </div>
         <div class="information-user">
-          <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="left">
-                        <div class="introduce-active ">
-                            <p class="name_cou">Giới thiệu</p>
-                            <p> <i class="fa-solid fa-users"></i> Thành viên của BKAP - Học lập trình từ 8 thang trước </p>
+            <div class="container-fluid use-pd">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left">
+                            <div class="introduce-active ">
+                                <p class="name_cou" style="color: #B16AFC;">Introduce</p>
+                                <p> <i class="fa-solid fa-users"></i> Member of BKAP - Learn to program to work from 8
+                                    months
+                                    before
+                                </p>
+                            </div>
+                            <div class="introduce-active mt-5">
+                                <p class="name_cou " style="color: #B16AFC;">Recent Activity </p>
+                                <p>Not Activity</p>
+                            </div>
                         </div>
-                        <div class="introduce-active mt-5">
-                            <p class="name_cou">Hoạt động gần đây </p>
-                            <p>Không có hoạt động nào</p>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-lg-6">
-                    <div class="right">
-                        <div class="information-course">
-                            <div class="text">
-                                <p class="name_cou">Các khóa học đã tham gia</p>
-                            </div>
-                            <div class="div">
-                                <div class="content-course d-flex align-items-center ">
-                             
-                                <a href="" class="p-4 a-img">  <img src="https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg" class="figure-img img-fluid rounded infor-img " alt="..."></a>
-                               
-                                    <div class="text-infor">
-                                        <p class="i">Lập trình cơ bản Javacript </p>
-                                        <p>Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.</p>
-                                    </div>
-                                   
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right">
+                            <div class="information-course">
+                                <div class="text">
+                                    <p class="name_cou" style="color: #B16AFC;">Các khóa học đã tham gia</p>
                                 </div>
-                                <div class="content-course d-flex align-items-center ">
-                                    <a href="" class="p-4 a-img"><img src="https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg" class="figure-img img-fluid rounded infor-img " alt="..."></a>
-                                    <div class="text-infor">
-                                        <p class="i">Lập trình cơ bản Javacript </p>
-                                        <p>Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.</p>
+                                <div class="div">
+                                    <div class="content-course d-flex align-items-center "
+                                        *ngFor="let item of listCourse" routerLink="/course/{{item.courseId}}"
+                                        style="cursor: pointer;">
+                                        <a class="p-4 a-img"> <img src="{{item.image}}"
+                                                class="figure-img img-fluid  infor-img " alt="..."></a>
+                                        <div class="text-infor">
+                                            <p class="i">{{item.name}} </p>
+                                            <p>{{item.description}}</p>
+                                        </div>
+
                                     </div>
-                                  
                                 </div>
-                                <div class="content-course d-flex align-items-center">
-                                  <a href="" class="p-4 a-img">  <img src="https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-3.jpg" class="figure-img img-fluid rounded infor-img " alt="..."></a>
-                                    <div class="text-infor">
-                                        <p class="i">Lập trình cơ bản Javacript </p>
-                                        <p>Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.</p>
-                                    </div>
-                            </div>
-                               
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
-          </div>
+            </div>
         </div>
     </div>
-   
-  </main>
- 
+
+</main>

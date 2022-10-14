@@ -19,15 +19,24 @@ export class CoursesComponent implements OnInit {
   status: any
   listTag: any
   listCategories: any
+  check: boolean = true
+  number_page: any = []
   constructor(private service: CourseService) { }
 
   ngOnInit(): void {
+
     this.service.getPageCourse(this.numPage).subscribe(data => {
       this.coursesList = data
       // console.log(this.courses);
     })
     this.service.getAllCourse().subscribe(data => {
-      console.log(data);
+      console.log(data.length);
+      // console.log(();
+
+      for (let i = 1; i <= ((Number(data.length) / 12) + 1); i++) {
+        this.number_page.push(i)
+      }
+      console.log(this.number_page);
 
       this.DataFilterCourses = data
     })
@@ -67,6 +76,7 @@ export class CoursesComponent implements OnInit {
   // change value
   handleStatus(id: number) {
     this.status == id ? this.status = null : this.status = id
+    alert(this.status)
   }
   handleTag(id: number) {
     if (this.tagCourse.includes(id)) {
@@ -127,7 +137,11 @@ export class CoursesComponent implements OnInit {
     return courses
   }
   filterStatus(courses: any) {
-    this.status && (courses = courses.filter((course: any) => course.status_id == this.status))
+    console.log(this.status);
+
+    this.status && (courses = courses.filter((course: any) => (Number(course.status_id) === Number(this.status))))
+    console.log(courses);
+
     return courses
   }
   filterDate(courses: any) {
@@ -136,7 +150,8 @@ export class CoursesComponent implements OnInit {
   }
 
   filter() {
-    alert('ok')
+    this.check = false
+    // alert('ok')
     console.log(this.DataFilterCourses);
 
     let result: any = this.DataFilterCourses
@@ -153,5 +168,12 @@ export class CoursesComponent implements OnInit {
     // console.log(result);
 
     this.coursesList = result
+  }
+  clearFilter() {
+    this.check = true
+    this.service.getPageCourse(this.numPage).subscribe(data => {
+      this.coursesList = data
+      // console.log(this.courses);
+    })
   }
 }

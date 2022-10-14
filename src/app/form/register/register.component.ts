@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import Swal from 'sweetalert2'
 import { FormserviceService } from 'src/app/service/formservice.service';
 
 @Component({
@@ -27,24 +27,46 @@ export class RegisterComponent implements OnInit {
     confirmPassword: new FormControl('', [
       Validators.required,
       Validators.minLength(5)
-    ])
+    ]),
+    image: new FormControl('')
   })
   constructor(private formservice: FormserviceService, private Router: Router) { }
-  id:any;
-  User:any=[];
-  
+  id: any;
+  User: any = [];
+
   ngOnInit(): void {
 
   }
+
   get form(): any {
     return this.formregister.controls;
   }
   onSubmit() {
     if (!this.formregister.invalid) {
-      this.formservice.postUser(this.formregister.value).subscribe((data)=>{
-       if(data){
-        this.Router.navigate(['/login'])
-       }
+      let pw1 = this.formregister.value.password;
+      console.log(pw1)
+      let pw2 = this.formregister.value.confirmPassword;
+      this.formregister.patchValue({ image: 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg' })
+      this.formservice.postUser(this.formregister.value).subscribe((data) => {
+        if (pw1 != pw2) {
+          alert("Passwords did not match");
+        } else {
+          alert("Password created successfully");
+          if (data) {
+            Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: 'Registered in successfully',
+              showConfirmButton: false,
+              timer: 1500
+            })
+            this.Router.navigate(['/user/login'])
+
+          }
+        }
+
+
+
       })
     }
     else {
