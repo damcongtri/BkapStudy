@@ -11,19 +11,23 @@ export class DetailCoursesComponent implements OnInit {
   course: any
   user: any
   checkCourse: any = []
+  id: any
   constructor(private service: CourseService, private actRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null
-    let id = this.actRoute.snapshot.params['id']
-    this.service.getDetailCourse(id).subscribe(data => {
-      this.course = data
-      this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null;
-      this.service.getCourseUser(this.user.id).subscribe((data: any) => {
-        this.checkCourse = data.filter((db: any) => (db.courseId == this.course.id))
-        console.log(this.checkCourse);
+    this.actRoute.paramMap.subscribe((param: any) => {
+      this.id = param.get(['id'])
+      this.service.getDetailCourse(this.id).subscribe(data => {
+        this.course = data
+        this.user = localStorage.getItem('acc') ? JSON.parse(localStorage.getItem('acc') as string) : null;
+        this.service.getCourseUser(this.user.id).subscribe((data: any) => {
+          this.checkCourse = data.filter((db: any) => (db.courseId == this.course.id))
+          console.log(this.checkCourse);
+        })
       })
     })
+
 
   }
   buyCourse(data: any) {
