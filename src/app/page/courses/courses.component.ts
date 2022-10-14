@@ -76,7 +76,7 @@ export class CoursesComponent implements OnInit {
   // change value
   handleStatus(id: number) {
     this.status == id ? this.status = null : this.status = id
-    alert(this.status)
+    // alert(this.status)
   }
   handleTag(id: number) {
     if (this.tagCourse.includes(id)) {

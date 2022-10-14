@@ -638,6 +638,14 @@
       "confirmPassword": "12345678",
       "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
       "id": 17
+    },
+    {
+      "name": "cuong",
+      "email": "cuong123@gmail.com",
+      "password": "1234567a@",
+      "confirmPassword": "1234567a@",
+      "image": "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
+      "id": 18
     }
   ],
   "cart": [
@@ -662,6 +670,69 @@
       "userId": 4,
       "courseId": 1,
       "id": 1
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1,
+        5
+      ],
+      "tag_id": [
+        1,
+        2
+      ],
+      "status_id": 1,
+      "date": 2020,
+      "view": 1000,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-4.jpg",
+      "status_1": true,
+      "userId": 18,
+      "courseId": 1,
+      "id": 2
+    },
+    {
+      "name": " Learn IOS development, Website design, Freelancing",
+      "author": "John Smith",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 1000,
+      "category_id": [
+        1
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 3,
+      "date": 2000,
+      "view": 1100,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-7.jpg",
+      "userId": 18,
+      "courseId": 4,
+      "id": 3
+    },
+    {
+      "name": " Master in website design and prototyping in sketch",
+      "author": "Maria",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 400,
+      "category_id": [
+        1,
+        2
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2004,
+      "view": 200,
+      "status_1": true,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/feature-5.jpg",
+      "userId": 18,
+      "courseId": 2,
+      "id": 4
     }
   ],
   "blogs": [
