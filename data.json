@@ -234,7 +234,7 @@
     },
     {
       "id": 13,
-      "name": " Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "name": " Cognitive Behavioural Therapy (CBT) Practitioner Certificate",
       "author": "Minh ca",
       "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
       "price": 13,
@@ -249,7 +249,64 @@
       "status_id": 1,
       "date": 2001,
       "view": 222,
-      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-11.jpg"
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-23.jpg"
+    },
+    {
+      "id": 14,
+      "name": " Internationally Accredited Diploma Certificate in Nutrition",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-25.jpg"
+    },
+    {
+      "id": 15,
+      "name": " Sounds True Presents: Qi Gong for Health and Healing",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-30.jpg"
+    },
+    {
+      "id": 16,
+      "name": " Elevate Your Tennis Game: Learn from Champion Andre Agassi",
+      "author": "Minh ca",
+      "description": "Lorem ipsum dolor sit amet, Of the consectetur adipiscing",
+      "price": 13,
+      "majob_1": "Developent",
+      "majob_2": "Javascript",
+      "category_id": [
+        4
+      ],
+      "tag_id": [
+        1
+      ],
+      "status_id": 1,
+      "date": 2001,
+      "view": 222,
+      "image": "https://demo.auburnforest.com/html/akadimia/akadimia-dark/images/resource/course-29.jpg"
     }
   ],
   "Author": [
